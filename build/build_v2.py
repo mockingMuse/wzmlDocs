@@ -36,6 +36,7 @@ head = '''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WZML-X — The Field Manual</title>
+<meta property="og:title" content="WZML-X — The Field Manual"><meta property="og:description" content="Every command, task flag and setting of WZML-X, with interactive Telegram walkthroughs of the bot's real menus."><meta property="og:image" content="https://himanshu-85.github.io/wzmlDocs/shared/og.png"><meta property="og:type" content="website"><meta property="og:url" content="https://himanshu-85.github.io/wzmlDocs/v2/"><meta name="twitter:card" content="summary_large_image">
 <meta name="description" content="Every command, task flag and setting of WZML-X, with interactive Telegram walkthroughs of the bot's real menus.">
 <meta name="theme-color" content="#0d0b1a">
 <link rel="icon" href="../shared/w-icon.svg" type="image/svg+xml">
