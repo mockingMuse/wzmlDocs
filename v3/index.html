@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WZML-X — The Journey of a File</title>
+<meta name="description" content="Follow one file from a Telegram message to its final upload, and learn how WZML-X works by steering it yourself.">
+<meta property="og:title" content="WZML-X — The Journey of a File">
+<meta property="og:description" content="Hold to send a magnet link, then fly through the pipeline that transcodes, renames and delivers it.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07060f">
+<link rel="icon" href="../shared/w-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="assets/story.css">
+</head>
+<body class="no-js">
+<a class="skip" href="#resolve">Skip the story</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="#hook" aria-label="WZML-X, back to the start"><img src="../shared/w-icon.svg" alt="" width="28" height="28"><span>WZML-X</span></a>
+  <span class="chapter" id="chapter" aria-live="polite">Prologue</span>
+  <span class="grow"></span>
+  <button class="pill" id="sound" type="button" aria-pressed="false">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><g class="on"><path d="M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13"/></g><g class="off"><path d="M17 9l5 6M22 9l-5 6"/></g></svg>
+    <span>Sound <b>off</b></span>
+  </button>
+  <a class="pill ghost" href="../v2/index.html">Full reference <span aria-hidden="true">↗</span></a>
+</header>
+
+<nav class="dots" aria-label="Story progress">
+  <a href="#hook" data-i="0"><span>Prologue</span></a>
+  <a href="#message" data-i="1"><span>The message</span></a>
+  <a href="#workshop" data-i="2"><span>The workshop</span></a>
+  <a href="#landing" data-i="3"><span>The landing</span></a>
+  <a href="#resolve" data-i="4"><span>Your turn</span></a>
+</nav>
+
+<main>
+
+<!-- ═══ 1 · HOOK ═══ -->
+<section class="hook" id="hook" data-scene="0">
+  <div class="hook-inner">
+    <p class="hook-cmd" id="hookCmd" aria-hidden="true"><span id="hookTyped"></span><i class="caret"></i></p>
+    <h1><span class="ln"><span>Every file</span></span><span class="ln"><span>has a <em>journey</em>.</span></span></h1>
+    <p class="hook-sub">WZML-X is a Telegram bot that moves anything — a magnet, a link, a video — to wherever you need it, re-encoding and renaming on the way. Send one, and follow it all the way home.</p>
+    <div class="hook-act">
+      <button class="hold" id="hold" type="button" aria-label="Hold to send the message. You can also just scroll.">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="54"/><circle class="bar" id="holdBar" cx="60" cy="60" r="54"/></svg>
+        <span class="hold-in"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg><b>Hold to send</b></span>
+      </button>
+      <p class="hook-alt">or simply scroll <span aria-hidden="true">↓</span></p>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><!--MARQ--></div></div>
+</section>
+
+<!-- ═══ 2 · THE MESSAGE ═══ -->
+<section class="scene" id="message" data-scene="1" style="--len:340vh">
+  <div class="stage">
+    <div class="copy">
+      <div class="beat" data-at="0">
+        <p class="kick">Scene one</p>
+        <h2>It begins with a message.</h2>
+        <p>Every task is one of two directions. <b>Leech</b> brings the file back into Telegram. <b>Mirror</b> sends it to cloud storage — Google Drive or any rclone remote.</p>
+        <div class="chips" data-group="dir" role="group" aria-label="Direction">
+          <button type="button" data-v="leech" class="on">Leech <small>into Telegram</small></button>
+          <button type="button" data-v="mirror">Mirror <small>to the cloud</small></button>
+        </div>
+      </div>
+      <div class="beat" data-at=".34">
+        <p class="kick">The engine</p>
+        <h2>A prefix picks who fetches it.</h2>
+        <p>No prefix means aria2 for plain links. <code>qb</code> hands magnets to qBittorrent, <code>y</code> sends video sites to yt-dlp. JDownloader and SABnzbd are there too — switched off until the owner enables them.</p>
+        <div class="chips" data-group="eng" role="group" aria-label="Download engine">
+          <button type="button" data-v="aria">aria2</button>
+          <button type="button" data-v="qb" class="on">qBittorrent</button>
+          <button type="button" data-v="ytdl">yt-dlp</button>
+          <button type="button" data-v="jd">JDownloader</button>
+          <button type="button" data-v="nzb">SABnzbd</button>
+        </div>
+      </div>
+      <div class="beat" data-at=".68">
+        <p class="kick">The details</p>
+        <h2>Flags shape the result.</h2>
+        <p>Add as many as you like, in any order — as long as the link comes first. Switch some on and watch the message grow.</p>
+        <div class="chips multi" data-group="flags" role="group" aria-label="Flags">
+          <button type="button" data-v="ff" class="on"><code>-ff av1</code> <small>re-encode</small></button>
+          <button type="button" data-v="ns" class="on"><code>-ns</code> <small>tidy the name</small></button>
+          <button type="button" data-v="ss"><code>-ss 4</code> <small>screenshots</small></button>
+          <button type="button" data-v="sv"><code>-sv</code> <small>sample clip</small></button>
+          <button type="button" data-v="e"><code>-e</code> <small>extract</small></button>
+          <button type="button" data-v="z"><code>-z</code> <small>zip</small></button>
+          <button type="button" data-v="ud" class="on"><code>-ud movies</code> <small>named channel</small></button>
+        </div>
+      </div>
+    </div>
+    <div class="visual"><div class="phone-slot" id="phoneMsg"></div>
+      <p class="cmdline" id="cmdline" aria-live="polite"></p>
+    </div>
+    <p class="scrollhint" aria-hidden="true">Keep scrolling · tap the chips</p>
+  </div>
+</section>
+
+<!-- ═══ 3 · THE WORKSHOP ═══ -->
+<section class="scene" id="workshop" data-scene="2" style="--len:520vh">
+  <div class="stage">
+    <div class="flight" id="flight" aria-hidden="true"><div class="world" id="world"></div></div>
+    <div class="hud">
+      <p class="kick">Scene two · the pipeline</p>
+      <h2 id="stTitle">The workshop.</h2>
+      <p id="stText">Your message has been added. Now the file travels through a fixed sequence of stages — you decide which ones light up.</p>
+      <p class="stflag" id="stFlag"></p>
+      <div class="chips multi small" data-group="flags2" role="group" aria-label="Toggle stages">
+        <button type="button" data-v="ff"><code>-ff</code></button>
+        <button type="button" data-v="ns"><code>-ns</code></button>
+        <button type="button" data-v="ss"><code>-ss</code></button>
+        <button type="button" data-v="sv"><code>-sv</code></button>
+        <button type="button" data-v="e"><code>-e</code></button>
+        <button type="button" data-v="z"><code>-z</code></button>
+      </div>
+    </div>
+    <aside class="filecard" id="filecard" aria-label="The file, as it changes">
+      <div class="fc-name" id="fcName"></div>
+      <ul class="fc-files" id="fcFiles"></ul>
+      <div class="fc-meta"><span id="fcSize"></span><span id="fcCodec"></span></div>
+      <div class="fc-lock" id="fcLock"><i></i>ff_lock · one encode at a time</div>
+    </aside>
+    <div class="railbar" aria-hidden="true"><i id="railFill"></i></div>
+    <p class="scrollhint" aria-hidden="true">Scroll to fly through</p>
+  </div>
+</section>
+
+<!-- ═══ 4 · THE LANDING ═══ -->
+<section class="scene" id="landing" data-scene="3" style="--len:340vh">
+  <div class="stage">
+    <div class="copy narrow">
+      <p class="kick">Scene three · delivery</p>
+      <h2>Wherever you point it.</h2>
+      <p id="landText">Choose where the file ends up and what kind of account sends it. Telegram caps a single file, so big ones are cut into parts.</p>
+      <div class="ctl">
+        <span class="lab">File size</span>
+        <div class="chips" data-group="size" role="group" aria-label="File size">
+          <button type="button" data-v="1.4" class="on">1.4 GB <small>after AV1</small></button>
+          <button type="button" data-v="3.6">3.6 GB <small>original</small></button>
+        </div>
+        <span class="lab">Sending account</span>
+        <div class="chips" data-group="acct" role="group" aria-label="Account">
+          <button type="button" data-v="std" class="on">Bot <small>2 GB cap</small></button>
+          <button type="button" data-v="prem">Premium session <small>4 GB cap</small></button>
+        </div>
+        <span class="lab">Destinations</span>
+        <div class="chips multi" data-group="dest" role="group" aria-label="Destinations">
+          <button type="button" data-v="chat" class="on">Telegram chat</button>
+          <button type="button" data-v="ud" class="on">Named channel</button>
+          <button type="button" data-v="gd">Google Drive</button>
+          <button type="button" data-v="rc">rclone</button>
+          <button type="button" data-v="up">Gofile &amp; hosts</button>
+        </div>
+      </div>
+    </div>
+    <div class="visual wide">
+      <svg id="routes" viewBox="0 0 640 520" role="img" aria-label="Routes from the file to each chosen destination"></svg>
+      <div class="delivered" id="delivered" aria-live="polite"><b>Delivered.</b><span id="deliveredText"></span></div>
+    </div>
+    <p class="scrollhint" aria-hidden="true">Scroll to send it</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ 5 · YOUR TURN ═══ -->
+<section class="resolve" id="resolve" data-scene="4">
+  <div class="r-wrap">
+    <p class="kick">Epilogue</p>
+    <h2 class="big">Now it&rsquo;s your <em>turn</em>.</h2>
+    <p class="lede">That was the whole trip: a message, a pipeline, a landing. Here are the everyday commands — copy them straight into Telegram.</p>
+
+    <div class="qs">
+      <div class="qs-row"><div class="qs-q">Send a link to Telegram</div><pre><code>/l &lt;link&gt;</code></pre></div>
+      <div class="qs-row"><div class="qs-q">Send a magnet to Telegram</div><pre><code>/ql &lt;magnet&gt;</code></pre></div>
+      <div class="qs-row"><div class="qs-q">Save to Google Drive or rclone</div><pre><code>/m &lt;link&gt;</code></pre></div>
+      <div class="qs-row"><div class="qs-q">YouTube and video sites</div><pre><code>/yl &lt;link&gt;</code></pre></div>
+      <div class="qs-row"><div class="qs-q">Many links at once</div><pre><code>/l -b   (reply to a .txt file)</code></pre></div>
+      <div class="qs-row"><div class="qs-q">Re-encode, rename, route</div><pre><code>/l &lt;link&gt; -ff av1 -ud movies</code></pre></div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn primary" href="#control">Walk through the bot&rsquo;s menus <span aria-hidden="true">↓</span></a>
+      <a class="btn" href="../v2/index.html">Open the full reference <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <div class="r-wrap" id="control">
+    <h3>The control room</h3>
+    <p>Two settings menus decide how every journey behaves: yours (<code>/usettings</code>) and the owner&rsquo;s (<code>/bsettings</code>). Each phone below replays the real menus — step by step, or tap through them yourself.</p>
+    <div class="tabs" role="tablist" aria-label="Which menu">
+      <button type="button" role="tab" class="tab on" data-bot="usettings" aria-selected="true">Your menu · /usettings</button>
+      <button type="button" role="tab" class="tab" data-bot="bsettings" aria-selected="false">Owner menu · /bsettings</button>
+    </div>
+    <div class="tgsim" id="simSlot" data-bot="usettings" aria-label="Interactive Telegram walkthrough"></div>
+    <p class="fine">Resolution order, for any setting that exists at several levels: <b>task flag</b> → <b>your <code>/usettings</code></b> → <b>bot config</b>. A value you set yourself always beats the bot&rsquo;s.</p>
+  </div>
+
+  <div class="r-wrap">
+    <h3>When the story bends</h3>
+    <div class="scars">
+      <div class="scar"><b>My config change did nothing.</b><p>A value in <code>/usettings</code> overrides <code>config.py</code> permanently. Check there first and press <b>Reset</b>.</p></div>
+      <div class="scar"><b>It landed in the wrong chat.</b><p>Only <code>LEECH_LOG_CHAT</code> (or <code>-ud</code>) is a primary destination. <code>-up</code> and your dump chats only receive copies. Use the full <code>-100…</code> id.</p></div>
+      <div class="scar"><b>My split size snapped back to 2 GB.</b><p>Premium wasn&rsquo;t detected when you saved it. Confirm <code>PREMIUM_USER: true</code> in the prompt, then enter it again.</p></div>
+      <div class="scar"><b><code>/cancel GID</code> does nothing.</b><p>Tap the <code>/c_&lt;gid&gt;</code> link on the task&rsquo;s status message instead.</p></div>
+      <div class="scar"><b>jd, nzb or Seedr refuse to run.</b><p>Those engines are switched off by default. Turn off <code>DISABLE_JD</code>, <code>DISABLE_NZB</code> or <code>DISABLE_SEEDR</code> in <code>/bsettings</code>.</p></div>
+      <div class="scar"><b><code>/mediainfo</code> and <code>/imdb</code> are silent.</b><p>They are plugins now. Enable them from <code>/plugins</code>.</p></div>
+    </div>
+    <p class="fine">Every flag, setting and fix lives in the <a href="../v2/index.html">full reference</a>, searchable with Ctrl&nbsp;K.</p>
+  </div>
+
+  <footer class="r-wrap foot">
+    <p>Written against WZML-X v3.1.11 (branch <code>wzv3</code>). Flags and defaults move between releases — check <code>/help</code> in the bot after an update.</p>
+  </footer>
+</section>
+
+<noscript><p style="position:fixed;inset:auto 0 0 0;padding:14px;background:#14112b;color:#fff;text-align:center">This experience needs JavaScript. The <a href="../v2/index.html" style="color:#b9a9ff">plain reference</a> works without it.</p></noscript>
+
+<script src="../shared/tgsim.js" defer></script>
+<script src="assets/sound.js" defer></script>
+<script src="assets/story.js" defer></script>
+</body>
+</html>

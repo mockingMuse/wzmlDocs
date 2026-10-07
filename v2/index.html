@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WZML-X — The Field Manual</title>
+<meta name="description" content="Every command, task flag and setting of WZML-X, with interactive Telegram walkthroughs of the bot's real menus.">
+<meta name="theme-color" content="#0d0b1a">
+<link rel="icon" href="../shared/w-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="nav">
+  <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Open contents" aria-expanded="false" aria-controls="rail">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a class="nav-brand" href="#top"><img src="../shared/w-icon.svg" alt="" width="30" height="30">WZML-X</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#quick">Quick start</a><a href="#commands">Commands</a><a href="#flags">Flags</a><a href="#usettings">Telegram menus</a><a href="../v3/index.html">The story</a><a href="https://github.com/SilentDemonSD/WZML-X">GitHub</a>
+  </nav>
+  <span class="nav-spacer"></span>
+  <button class="kbar" id="kbar" type="button" aria-label="Search the manual">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <span class="l">Search flags, commands, settings</span><kbd>Ctrl K</kbd>
+  </button>
+  <button class="icon-btn" id="theme" type="button" aria-label="Toggle colour theme">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+  </button>
+</header>
+
+<section class="hero" id="top">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-grid">
+    <div>
+      <h1>Anything in. <em>Anywhere</em> out.</h1>
+      <p class="lede">Download from torrents, Usenet, filehosts and YouTube, then send it to cloud storage or Telegram. Start with the everyday answers; open any “more” section when you want the detail.</p>
+      <div class="cta">
+        <a class="btn primary" href="#quick">Quick start <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#usettings">Open the Telegram walkthroughs</a>
+      </div>
+      <div class="hero-meta"><span><i></i>v3.1.11</span><span><i></i>Branch wzv3</span><span><i></i>Every flag, setting and gotcha</span></div>
+    </div>
+    <div class="hero-phone" id="hero-phone" aria-label="Animated demo of a leech task in Telegram"></div>
+  </div>
+  <div class="marquee"><div class="marquee-track" aria-hidden="true">
+    <span>Torrents</span><span>Magnets</span><span>Usenet</span><span>Seedr</span><span>Mega</span><span>YouTube</span><span>Direct links</span><span>Telegram</span><span class="to">to</span><span>Google Drive</span><span>rclone</span><span>Telegram</span><span>Gofile</span><span>PixelDrain</span><span>YouTube</span><span class="to">and back</span><span>Torrents</span><span>Magnets</span><span>Usenet</span><span>Seedr</span><span>Mega</span><span>YouTube</span><span>Direct links</span><span>Telegram</span><span class="to">to</span><span>Google Drive</span><span>rclone</span><span>Telegram</span><span>Gofile</span><span>PixelDrain</span><span>YouTube</span><span class="to">and back</span>
+  </div></div>
+</section>
+
+<div class="shell">
+<nav class="rail" id="rail" aria-label="Chapters">
+  <ul class="toc" id="toc">
+    <li><a href="../v3/index.html"><i>→</i>The story</a></li>
+    <li><a href="#quick"><i>★</i>Quick Start</a></li>
+    <li class="grp">Learn</li>
+    <li><a href="#start"><i>01</i>Start Here</a></li>
+    <li><a href="#commands"><i>02</i>Commands</a></li>
+    <li><a href="#pipeline"><i>03</i>The Task Pipeline</a></li>
+    <li class="grp">Reference</li>
+    <li><a href="#flags"><i>04</i>Task Flags</a></li>
+    <li><a href="#usettings"><i>05</i>User Settings</a></li>
+    <li><a href="#bsettings"><i>06</i>Bot Settings</a></li>
+    <li><a href="#locator"><i>07</i>Settings Locator</a></li>
+    <li class="grp">Operate</li>
+    <li><a href="#ffmpeg"><i>08</i>FFmpeg Presets</a></li>
+    <li><a href="#queues"><i>09</i>Queues &amp; Throughput</a></li>
+    <li><a href="#leech"><i>10</i>Leech Destinations</a></li>
+    <li><a href="#recipes"><i>11</i>Recipes</a></li>
+    <li><a href="#gotchas"><i>12</i>Gotchas</a></li>
+  </ul>
+</nav>
+<div class="scrim" id="scrim"></div>
+<main>
+<section id="quick"><div class="wrap">
+  <p class="chap"><b>00</b>Quick Start</p>
+  <h2>What do you want to do?</h2>
+  <p class="lede">The everyday jobs, as copy-paste commands. Everything deeper is one click away and stays folded until you ask for it.</p>
+
+  <h4>Download and send</h4>
+  <div class="qs">
+    <div class="qs-row"><div class="qs-q">Send a link or file to Telegram</div><pre>/l &lt;link&gt;</pre></div>
+    <div class="qs-row"><div class="qs-q">Send a torrent or magnet to Telegram</div><pre>/ql &lt;magnet&gt;</pre></div>
+    <div class="qs-row"><div class="qs-q">Save to Google Drive or rclone</div><pre>/m &lt;link&gt;</pre></div>
+    <div class="qs-row"><div class="qs-q">YouTube and video sites</div><pre>/yl &lt;link&gt;      <i># to Telegram</i>
+/y &lt;link&gt;       <i># to cloud</i></pre></div>
+    <div class="qs-row"><div class="qs-q">Many links at once</div><pre>/l <b>-b</b>      <i># reply to a .txt, one link per line</i></pre></div>
+    <div class="qs-row"><div class="qs-q">Pick files inside a torrent</div><pre>/ql &lt;magnet&gt; <b>-s</b></pre></div>
+  </div>
+
+  <h4>Change the result</h4>
+  <div class="qs">
+    <div class="qs-row"><div class="qs-q">Rename it</div><pre>/l &lt;link&gt; <b>-n</b> My Movie 2024</pre></div>
+    <div class="qs-row"><div class="qs-q">Unpack or zip it</div><pre>/m &lt;link&gt; <b>-e</b>      <i># extract</i>
+/m &lt;link&gt; <b>-z</b>      <i># zip</i></pre></div>
+    <div class="qs-row"><div class="qs-q">Re-encode the video</div><pre>/l &lt;link&gt; <b>-ff</b> av1</pre></div>
+    <div class="qs-row"><div class="qs-q">Send to a specific channel</div><pre>/l &lt;link&gt; <b>-ud</b> movies</pre></div>
+  </div>
+
+  <h4>Check on it</h4>
+  <div class="qs">
+    <div class="qs-row"><div class="qs-q">See progress</div><pre>/s</pre></div>
+    <div class="qs-row"><div class="qs-q">Cancel a task</div><pre>tap the /c_… link on its status message</pre></div>
+    <div class="qs-row"><div class="qs-q">Set a thumbnail, caption or split size</div><pre>/us   <i># see the walkthroughs in ch. 05</i></pre></div>
+  </div>
+
+  <div class="goto" role="list">
+    <a role="listitem" href="#commands"><b>All commands</b><span>what each one does</span></a>
+    <a role="listitem" href="#flags"><b>All flags</b><span>every -option</span></a>
+    <a role="listitem" href="#usettings"><b>Telegram menus</b><span>step-by-step phone demos</span></a>
+    <a role="listitem" href="#gotchas"><b>Something broke?</b><span>common fixes</span></a>
+  </div>
+</div></section>
+
+<section id="start"><div class="wrap">
+  <p class="chap"><b>01</b>Start Here</p>
+  <h2>Mirror or Leech — pick the direction</h2>
+  <p>Every task in this bot is one of two directions, and the command you type declares which. Everything else is a variation on those two.</p>
+
+  <div class="tw"><table>
+    <tr><th>Direction</th><th>Where files end up</th><th>Commands</th></tr>
+    <tr><td><b>Mirror</b></td><td>Cloud storage — Google Drive or any rclone remote</td><td><code>/mirror</code> <code>/qbmirror</code> <code>/jdmirror</code> <code>/nzbmirror</code></td></tr>
+    <tr><td><b>Leech</b></td><td>Back into Telegram as uploaded files</td><td><code>/leech</code> <code>/qbleech</code> <code>/jdleech</code> <code>/nzbleech</code></td></tr>
+    <tr><td><b>Clone</b></td><td>Drive→Drive or rclone→rclone, server-side; or Telegram message links copied between chats</td><td><code>/clone</code></td></tr>
+    <tr><td><b>Uphoster</b></td><td>DDL hosts — Gofile, PixelDrain, etc.</td><td><code>/uphoster</code></td></tr>
+  </table></div>
+
+  <h3>The prefix tells the bot which downloader to use</h3>
+  <p>Same direction, different engine. Choose based on what you're feeding it:</p>
+  <div class="tw"><table>
+    <tr><th>Prefix</th><th>Engine</th><th>Use for</th></tr>
+    <tr><td><code>(none)</code></td><td>aria2</td><td>Direct links, HTTP, FTP, and <code>.torrent</code> files</td></tr>
+    <tr><td><code>qb</code></td><td>qBittorrent</td><td>Magnets and torrents — better peer handling, file selection</td></tr>
+    <tr><td><code>jd</code></td><td>JDownloader</td><td>Filehosts needing captcha/account handling</td></tr>
+    <tr><td><code>nzb</code></td><td>SABnzbd</td><td>Usenet <code>.nzb</code> files</td></tr>
+    <tr><td><code>ytdl</code></td><td>yt-dlp</td><td>YouTube, m3u8, social media — <a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">1800+ sites</a></td></tr>
+    <tr><td><code>/seedrlink</code></td><td>Seedr</td><td>Magnets fetched through a Seedr account — or add <code>-seedr</code> to a normal task</td></tr>
+  </table></div>
+
+  <h3>Three ways to hand it a source</h3>
+  <ol class="ol">
+    <li><b>Inline</b> — <code>/leech &lt;link&gt;</code>. The simplest form.</li>
+    <li><b>By reply</b> — reply to a message containing a link, a <code>.torrent</code>, or an <code>.nzb</code> with just <code>/leech</code>. Required for bulk and for Telegram range links.</li>
+    <li><b>Bare command</b> — send <code>/leech</code> alone and the bot replies with the full usage guide for that command.</li>
+  </ol>
+
+  <div class="note warn"><b class="lab">Off by default</b>
+    <p><code>DISABLE_JD</code>, <code>DISABLE_NZB</code> and <code>DISABLE_SEEDR</code> all default to <b>True</b>. On a fresh deploy the <code>jd</code>, <code>nzb</code> and Seedr commands refuse to run until the owner flips them off in <a href="#bsettings">Bot Settings</a>.</p>
+  </div>
+
+  <div class="note tip"><b class="lab">Shortcuts</b>
+    <p>Every command has a short alias. <code>/l</code> = <code>/leech</code>, <code>/ql</code> = <code>/qbleech</code>, <code>/m</code> = <code>/mirror</code>, <code>/s</code> = <code>/status</code>, <code>/c</code> = <code>/cancel</code>. If the owner set <code>CMD_SUFFIX</code>, append it to every command: <code>/leech1</code>, <code>/ql1</code>. The exceptions are <code>/restartall</code> and <code>/statusall</code>, which are never suffixed.</p>
+  </div>
+</div></section>
+
+<section id="commands"><div class="wrap">
+  <p class="chap"><b>02</b>Commands</p>
+  <h2>The full command set</h2>
+  <p>Aliases are interchangeable. Unmarked commands work for any authorized user; <span class="tag">sudo</span> marks sudo or owner only.</p>
+
+  <h4>Tasks</h4>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Alias</th><th>Does</th></tr>
+    <tr><td><code>/mirror</code></td><td><code>/m</code></td><td>Download a link/file and upload to cloud</td></tr>
+    <tr><td><code>/leech</code></td><td><code>/l</code></td><td>Download and upload into Telegram</td></tr>
+    <tr><td><code>/qb…</code> <code>/jd…</code> <code>/nzb…</code></td><td><code>/qm</code> <code>/ql</code> <code>/jm</code> <code>/jl</code> <code>/nm</code> <code>/nl</code></td><td>Same two commands through another engine: add <code>qb</code> (torrents), <code>jd</code> (JDownloader) or <code>nzb</code> (Usenet), e.g. <code>/qbleech</code></td></tr>
+    <tr><td><code>/ytdl</code></td><td><code>/y</code></td><td>yt-dlp source → cloud</td></tr>
+    <tr><td><code>/ytdlleech</code></td><td><code>/yl</code></td><td>yt-dlp source → Telegram</td></tr>
+    <tr><td><code>/seedrlink</code></td><td><code>/slink</code> <code>/srlink</code></td><td>Fetch a magnet through Seedr</td></tr>
+    <tr><td><code>/clone</code></td><td><code>/cl</code></td><td>Server-side Drive/rclone copy, or copy Telegram messages between chats</td></tr>
+    <tr><td><code>/uphoster</code></td><td><code>/up</code></td><td>Upload to DDL hosts</td></tr>
+  </table></div>
+
+  <h4>Managing running tasks</h4>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Alias</th><th>Does</th></tr>
+    <tr><td><code>/status</code></td><td><code>/s</code> <code>/statusall</code></td><td>Live status of all tasks. <code>/status me</code> for yours only, or pass a user id</td></tr>
+    <tr><td><code>/c_&lt;gid&gt;</code></td><td>—</td><td>Cancel one task. The bot puts this link on every status message — tap it rather than typing</td></tr>
+    <tr><td><code>/cancelall</code></td><td><code>/call</code></td><td>Cancel everything, optionally filtered by status</td></tr>
+    <tr><td><code>/forcestart</code></td><td><code>/fs</code></td><td>Jump a queued task to the front</td></tr>
+    <tr><td><code>/sel_&lt;gid&gt;</code></td><td>—</td><td>Pick which files inside a torrent/nzb to keep — also a link on the status message</td></tr>
+    <tr><td><code>/category</code></td><td><code>/ctsel</code></td><td>Choose the Drive category for an upload</td></tr>
+  </table></div>
+
+  <details class="more"><summary><span class="dt">Settings, search, plugin and owner commands</span><span class="dh">about 40 more</span></summary><div class="more-body">
+<h4>Settings, search and info</h4>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Alias</th><th>Does</th></tr>
+    <tr><td><code>/usetting</code></td><td><code>/us</code></td><td><b>Your</b> personal settings — see ch. 05</td></tr>
+    <tr><td><code>/bsetting</code></td><td><code>/bs</code></td><td>Bot-wide config <span class="tag">sudo</span></td></tr>
+    <tr><td><code>/search</code></td><td>—</td><td>Torrent search via qBittorrent plugins</td></tr>
+    <tr><td><code>/list</code></td><td>—</td><td>Search your Google Drive(s)</td></tr>
+    <tr><td><code>/count</code></td><td>—</td><td>Count files/folders in a Drive link</td></tr>
+    <tr><td><code>/del</code></td><td>—</td><td>Delete a file or folder from Drive</td></tr>
+    <tr><td><code>/stream</code></td><td><code>/sl</code></td><td>Generate a streaming link</td></tr>
+    <tr><td><code>/rss</code></td><td>—</td><td>RSS feed subscription menu</td></tr>
+    <tr><td><code>/addimage</code> <code>/images</code></td><td><code>/ai</code> <code>/img</code></td><td>Add to, or browse, the bot's picture pool</td></tr>
+    <tr><td><code>/stats</code></td><td><code>/st</code></td><td>Machine, repo and tool versions</td></tr>
+    <tr><td><code>/ping</code></td><td>—</td><td>Response-time check</td></tr>
+    <tr><td><code>/help</code></td><td><code>/h</code></td><td>In-bot help browser</td></tr>
+  </table></div>
+
+  <h4>Plugins</h4>
+  <p>Several commands are no longer built in. They ship as plugins that the owner installs and enables from <code>/plugins</code> (and only while <code>DISABLE_PLUGINS</code> is False). If a command below does nothing, its plugin isn't enabled.</p>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Alias</th><th>Does</th></tr>
+    <tr><td><code>/mediainfo</code></td><td><code>/mi</code></td><td>Full media info for a file or link</td></tr>
+    <tr><td><code>/imdb</code></td><td>—</td><td>IMDb lookup by title or <code>tt</code> id</td></tr>
+    <tr><td><code>/nzbsearch</code></td><td><code>/ns</code></td><td>Usenet search via Hydra</td></tr>
+    <tr><td><code>/anime</code></td><td><code>/anilist</code></td><td>AniList lookup (<code>/animehelp</code> for usage)</td></tr>
+    <tr><td><code>/mdl</code></td><td><code>/mydramalist</code></td><td>MyDramaList lookup</td></tr>
+    <tr><td><code>/speedtest</code></td><td><code>/spt</code></td><td>Server speed test</td></tr>
+    <tr><td><code>/exportsession</code></td><td>—</td><td>Generate a Pyrogram session string</td></tr>
+  </table></div>
+
+  <h4>Owner &amp; sudo</h4>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Does</th></tr>
+    <tr><td><code>/authorize</code> <code>/a</code></td><td>Allow a chat or user to use the bot</td></tr>
+    <tr><td><code>/unauthorize</code> <code>/ua</code></td><td>Revoke that access</td></tr>
+    <tr><td><code>/addsudo</code> <code>/rmsudo</code></td><td>Grant or remove sudo</td></tr>
+    <tr><td><code>/blacklist</code> <code>/rmblacklist</code></td><td>Ban or unban a user</td></tr>
+    <tr><td><code>/users</code></td><td>List the bot's users</td></tr>
+    <tr><td><code>/restart</code> <code>/r</code> <code>/restartall</code></td><td>Restart and pull updates</td></tr>
+    <tr><td><code>/restartses</code> <code>/rses</code></td><td>Restart Telegram sessions only</td></tr>
+    <tr><td><code>/log</code></td><td>Fetch the log file — first stop for any failure</td></tr>
+    <tr><td><code>/shell</code></td><td>Run a shell command in the container</td></tr>
+    <tr><td><code>/aexec</code> <code>/exec</code></td><td>Run Python inside the bot. Invaluable for inspecting live state</td></tr>
+    <tr><td><code>/memory</code> <code>/mem</code></td><td>Memory stats and allocation profiler</td></tr>
+    <tr><td><code>/clearlocals</code></td><td>Clear cached local state</td></tr>
+    <tr><td><code>/gdclean</code> <code>/gdc</code></td><td>Clean up Google Drive (any authorized user)</td></tr>
+    <tr><td><code>/broadcast</code> <code>/bc</code></td><td>Message all users</td></tr>
+    <tr><td><code>/plugins</code></td><td>Install, enable and update plugins</td></tr>
+  </table></div>
+
+  <h4>Your own session</h4>
+  <div class="tw"><table>
+    <tr><th>Command</th><th>Does</th></tr>
+    <tr><td><code>/login</code></td><td>Store your own Telegram session, encrypted, for Telegram clone</td></tr>
+    <tr><td><code>/lockmysession</code> <code>/lms</code></td><td>Lock that stored session so it can't be used until you unlock it</td></tr>
+  </table></div>
+
+  <div class="note tip"><b class="lab">Debugging trick</b>
+    <p><code>/aexec</code> is the fastest way to see what the bot <em>actually</em> believes, rather than what your config file says. Settings can be overridden at three levels, and this reads the winner:</p>
+    <pre>/aexec
+<i>from bot.core.config_manager import Config</i>
+<i>from bot.core.tg_client import TgClient</i>
+<b>return</b> {"premium": TgClient.IS_PREMIUM_USER,
+        "max_split": TgClient.MAX_SPLIT_SIZE,
+        "log_chat": Config.LEECH_LOG_CHAT}</pre>
+  </div>
+</div></details>
+</div></section>
+
+<section id="pipeline"><div class="wrap">
+  <p class="chap"><b>03</b>The Task Pipeline</p>
+  <h2>What happens, in what order</h2>
+  <p>Most confusing behaviour makes sense once you know the order of stages. A task runs these strictly in sequence, and <strong>one task is only ever in one stage at a time</strong>.</p>
+
+  <figure class="figure">
+    <ol class="pipe" aria-label="Task pipeline stages in order">
+      <li class="io"><b>Download</b><small>queue-gated</small></li>
+      <li><b>Exclude</b><small>extension filter</small></li>
+      <li><b>Join</b><small><code>-j</code></small></li>
+      <li><b>Extract</b><small><code>-e</code>, then filter again</small></li>
+      <li class="lock"><b>FFmpeg</b><small><code>-ff</code></small></li>
+      <li class="lock"><b>Metadata</b><small><code>-meta</code></small></li>
+      <li><b>Name swap</b><small><code>-ns</code></small></li>
+      <li><b>Screenshots</b><small><code>-ss</code></small></li>
+      <li class="lock"><b>Convert</b><small><code>-ca</code> <code>-cv</code></small></li>
+      <li class="lock"><b>Sample</b><small><code>-sv</code></small></li>
+      <li><b>Zip</b><small><code>-z</code></small></li>
+      <li><b>Split</b><small>leech only</small></li>
+      <li class="io"><b>Upload</b><small>queue-gated</small></li>
+    </ol>
+    <figcaption>Tinted stages share one process-wide lock (<code>ff_lock</code>, a single slot), so ffmpeg work never runs in parallel across tasks — but uploads sit outside it, which is why separate tasks can upload while the next one encodes. Zip comes <em>after</em> ffmpeg, so <code>-z</code> compresses the transcoded files.</figcaption>
+  </figure>
+
+  <details class="more"><summary><span class="dt">What this means in practice</span><span class="dh">4 points</span></summary><div class="more-body">
+<h3>Four consequences worth internalising</h3>
+  <ul class="plain">
+    <li><b>One task = one batch.</b> A torrent with 20 videos converts all 20, <em>then</em> uploads all 20. Nothing uploads early. To get file-by-file progress you need one task per file — see <a href="#recipes">Recipes</a>.</li>
+    <li><b>Encodes serialise, uploads don't.</b> With several tasks running, task B starts encoding the moment task A's encode ends, while A uploads. That overlap is free — you just have to give the bot separate tasks.</li>
+    <li><b>Excluded files die after download, not before.</b> The extension filter runs on completed files — and again after extraction — so it saves upload bandwidth and disk, never download bandwidth.</li>
+    <li><b>The lock pauses your other services.</b> While an encode holds it, SABnzbd and JDownloader can be paused to free CPU, governed by <code>THROTTLE_SERVICES</code> (<code>auto</code> only on small hosts).</li>
+  </ul>
+</div></details>
+</div></section>
+
+<section id="flags"><div class="wrap">
+  <p class="chap"><b>04</b>Task Flags</p>
+  <h2>Every task flag</h2>
+  <p>Flags work on mirror and leech commands unless noted — <code>/ytdl</code> additionally takes <code>-opt</code> but not <code>-e</code>, <code>-j</code>, <code>-d</code> or <code>-ad</code>. Order doesn't matter, and they can be combined freely. Press <kbd>/</kbd> to search them all.</p>
+
+  <h4>Naming &amp; output</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-n</span><em>New name</em><span class="tag">not for torrents</span></div>
+      <p>Rename the output. Torrents keep their internal names, so this is ignored there.</p>
+      <pre>/leech &lt;link&gt; <b>-n</b> My Movie 2024</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-up</span><em>Upload destination</em></div>
+      <p><b>Mirror:</b> an rclone path, a Drive id, a key from your <code>UPLOAD_PATHS</code>, or <code>rcl</code>/<code>gdl</code> to pick interactively. <b>Leech:</b> an <em>extra copy</em> destination — a chat id, <code>@username</code> or <code>pm</code>, with <code>|topic_id</code> for forum topics. The primary leech destination is <code>LEECH_LOG_CHAT</code> or <code>-ud</code>; see <a href="#leech">ch. 10</a>. Use the full <code>-100…</code> id for channels and supergroups.</p>
+      <pre>/leech &lt;link&gt; <b>-up</b> -1001234567890|42
+/mirror &lt;link&gt; <b>-up</b> mydrive:Movies</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-ud</span><em>Named dump chat</em><span class="tag">leech</span></div>
+      <p>Pick a primary leech destination by name from <code>LEECH_DUMP_CHATS</code> (yours merged over the owner's — yours win). A raw id or <code>@username</code> works too. An unknown name opens a button picker.</p>
+      <pre>/leech &lt;link&gt; <b>-ud</b> movies</pre></div>
+    <details class="more inline"><summary><span class="dt">4 more flags</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><span class="flag">-ns</span><em>Name substitution</em></div>
+      <p>Regex find-and-replace across all filenames. Format <code>find/replace/s</code> where a trailing <code>s</code> makes it case-sensitive; separate rules with <code>|</code>. Omit the replacement to delete the text. Escape <code>^$.|?*+()[]{}-</code> with a backslash.</p>
+      <pre>/leech &lt;link&gt; <b>-ns</b> 1080p/4K | RARBG/ | \[grp\]/mine</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-m</span><em>Same directory</em></div>
+      <p>Collect several links into one folder so they upload as a single task. Also works per-link inside a bulk file.</p>
+      <pre>/leech -i 3 <b>-m</b> Season 01</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-gc</span><em>Drive category</em></div>
+      <p>Choose the Drive category up front instead of waiting for the picker. Needs <code>DRIVE_CATEGORY_MODE</code>.</p></div>
+    <div class="card"><div class="card-h"><span class="flag">-yt</span><em>YouTube upload</em></div>
+      <p>Upload the result to YouTube using your <code>YT_*</code> defaults from <code>/usettings</code>.</p>
+      <pre>/mirror &lt;link&gt; <b>-yt</b></pre></div>
+    </div></details>
+  </div>
+
+  <h4>Source handling</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-i</span><em>Multi-link</em></div>
+      <p>Process N consecutive messages, starting from the one you reply to. Each becomes its own task.</p>
+      <pre>/leech <b>-i</b> 10</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-b</span><em>Bulk</em><span class="tag">reply required</span></div>
+      <p>Read links from a replied-to text message or <code>.txt</code> document, one per line, and spawn a task each. Optionally slice with <code>start:end</code> — a zero-indexed Python slice, so <code>:2</code> is the first two and <code>1:</code> skips the first.</p>
+      <pre>/leech <b>-b</b>        <i># all links</i>
+/leech <b>-b</b> :2     <i># first two</i>
+/leech <b>-b</b> 1:     <i># skip the first</i>
+/leech <b>-b</b> 5:10   <i># links 6 through 10</i></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-s</span><em>Select files</em></div>
+      <p>On torrents/nzb: opens the web picker so you choose which files to download. On <code>/ytdl</code>: shows quality buttons instead.</p>
+      <pre>/qbleech &lt;magnet&gt; <b>-s</b></pre></div>
+    <details class="more inline"><summary><span class="dt">5 more flags</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><span class="flag">-d</span><em>Seed</em></div>
+      <p>Keep seeding after the torrent finishes. Give a ratio, a time in minutes, or both: <code>1.0</code>, <code>1.0:60</code> or <code>:60</code>. Blocked when <code>DISABLE_SEED</code> is on.</p>
+      <pre>/qbleech &lt;magnet&gt; <b>-d</b> 1.0:60</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-ad</span><em>AllDebrid</em><span class="tag">needs api key</span></div>
+      <p>Route through AllDebrid. Unlocks filehost links (1fichier, rapidgator…), or for magnets/torrents downloads from AllDebrid's CDN instead of peers — bypassing aria2/qBittorrent entirely. Great for dead torrents.</p>
+      <pre>/leech &lt;magnet&gt; <b>-ad</b></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-au -ap</span><em>HTTP auth</em></div>
+      <p>Username and password for a protected direct link.</p>
+      <pre>/mirror &lt;link&gt; <b>-au</b> user <b>-ap</b> pass</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-h</span><em>Custom headers</em></div>
+      <p>Extra request headers for direct downloads, as <code>key: value</code> pairs.</p>
+      <pre>/mirror &lt;link&gt; <b>-h</b> Referer: https://site.com User-Agent: Mozilla/5.0</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-opt</span><em>yt-dlp options</em><span class="tag">ytdl only</span></div>
+      <p>Raw yt-dlp API options as a Python dict, or <code>key:value|key:value</code>.</p>
+      <pre>/ytdl &lt;link&gt; <b>-opt</b> {"format":"bv*+ba","writesubtitles":True}</pre></div>
+    </div></details>
+  </div>
+
+  <h4>Archives</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-e</span><em>Extract</em></div>
+      <p>Unpack archives after download. Add a password after the flag if needed.</p>
+      <pre>/mirror &lt;link&gt; <b>-e</b> secret123</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-z</span><em>Zip</em></div>
+      <p>Compress before upload, optionally password-protected. With both flags, extraction always runs first.</p>
+      <pre>/mirror &lt;link&gt; <b>-z</b> secret123</pre></div>
+    <details class="more inline"><summary><span class="dt">1 more flags</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><span class="flag">-j</span><em>Join splits</em></div>
+      <p>Rejoin <code>.001</code>/<code>.002</code> style parts. Runs before extract, so it usually pairs with <code>-m</code>.</p>
+      <pre>/leech -b <b>-j</b> -m joined</pre></div>
+    </div></details>
+  </div>
+
+  <h4>Media processing</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-ff</span><em>FFmpeg preset</em></div>
+      <p>Run a named preset from <code>FFMPEG_CMDS</code> (or pass a list literal inline). Blocked when <code>DISABLE_FF_MODE</code> is on. <strong>Repeatable</strong> — pass it several times and each preset runs in turn on the same source, which makes side-by-side encoding tests easy. Full detail in <a href="#ffmpeg">ch. 08</a>.</p>
+      <pre>/leech &lt;link&gt; <b>-ff</b> av1
+/leech &lt;link&gt; <b>-ff</b> t8 <b>-ff</b> t6 <b>-ff</b> t6q</pre></div>
+    <details class="more inline"><summary><span class="dt">4 more flags</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><span class="flag">-ca -cv</span><em>Convert media</em></div>
+      <p>Blanket container/codec conversion. <code>+</code> limits it to listed inputs, <code>-</code> excludes them.</p>
+      <pre>/leech &lt;link&gt; <b>-cv</b> mkv - webm flv
+/leech &lt;link&gt; <b>-ca</b> mp3 + flac ogg</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-meta</span><em>Metadata</em></div>
+      <p>Write container metadata, pipe-separated. Supports <code>{filename}</code>, <code>{basename}</code>, <code>{extension}</code>, <code>{audiolang}</code>, <code>{sublang}</code>, <code>{year}</code>. Escape a literal pipe as <code>\|</code>.</p>
+      <pre>/leech &lt;link&gt; <b>-meta</b> title={basename}|year={year}</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-sv</span><em>Sample video</em></div>
+      <p>Build a short preview. <code>duration:part</code>, default 60:4.</p>
+      <pre>/leech &lt;link&gt; <b>-sv</b> 70:5</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-ss</span><em>Screenshots</em></div>
+      <p>Generate N stills across each video. Default 10.</p>
+      <pre>/leech &lt;link&gt; <b>-ss</b> 6</pre></div>
+    </div></details>
+  </div>
+
+  <h4>Telegram delivery</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-sp</span><em>Split size</em></div>
+      <p>Override split size for this task. Accepts <code>2gb</code>, <code>500mb</code>, or raw bytes. Capped at your account's real ceiling — about 2 GB in bot mode, 4 GB when a premium user session does the upload.</p>
+      <pre>/leech &lt;link&gt; <b>-sp</b> 2gb</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-doc -med</span><em>Upload as</em></div>
+      <p>Force document (no compression, no preview) or media (streamable).</p>
+      <pre>/leech &lt;link&gt; <b>-doc</b></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-t</span><em>Thumbnail</em></div>
+      <p>A direct image URL, a Telegram message link with a photo, or <code>none</code> to strip thumbnails.</p>
+      <pre>/leech &lt;link&gt; <b>-t</b> https://i.imgur.com/x.jpg</pre></div>
+    <details class="more inline"><summary><span class="dt">2 more flags</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><span class="flag">-hl -ut -bt</span><em>Transmission mode</em></div>
+      <p><code>-bt</code> bot only (2 GB cap). <code>-ut</code> user session only. <code>-hl</code> hybrid — user for files over 2 GB, bot below.</p>
+      <pre>/leech &lt;link&gt; <b>-hl</b></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-tl</span><em>Thumbnail layout</em></div>
+      <p>Grid of screenshots as the thumbnail, <code>columns x rows</code>.</p>
+      <pre>/leech &lt;link&gt; <b>-tl</b> 3x3</pre></div>
+    </div></details>
+  </div>
+
+  <details class="more"><summary><span class="dt">Advanced and niche flags</span><span class="dh">force start, rclone, Seedr, Telegram clone, switched-off flags</span></summary><div class="more-body">
+<h4>Control</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-f -fd -fu</span><em>Force start</em></div>
+      <p>Skip the queue. <code>-fd</code> download only, <code>-fu</code> upload only, <code>-f</code> both.</p>
+      <pre>/leech &lt;link&gt; <b>-f</b></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-rcf</span><em>Rclone flags</em></div>
+      <p>Pipe-separated rclone flags, overriding all others except <code>--exclude</code>.</p>
+      <pre>/mirror &lt;link&gt; <b>-rcf</b> --buffer-size:8M|--drive-starred-only</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-sync</span><em>Rclone sync</em><span class="tag">clone only</span></div>
+      <p>Use sync semantics rather than copy.</p>
+      <pre>/clone src:path -up dst:path <b>-sync</b></pre></div>
+  </div>
+  <h4>Seedr</h4>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-seedr</span><em>Route through Seedr</em><span class="tag">needs account</span></div>
+      <p>Send a magnet through your Seedr account instead of peers. Needs <code>SEEDR_EMAIL</code>/<code>SEEDR_PASSWORD</code> and <code>DISABLE_SEEDR</code> turned off.</p>
+      <pre>/leech &lt;magnet&gt; <b>-seedr</b></pre></div>
+  </div>
+
+  <h4>Clone only</h4>
+  <p>These apply to <code>/clone</code> with Telegram message links.</p>
+  <div class="cards">
+    <div class="card"><div class="card-h"><span class="flag">-fwd</span><em>Forward</em></div>
+      <p>Forward the messages instead of copying them.</p>
+      <pre>/clone https://t.me/c/123/120-260 <b>-ud</b> A <b>-fwd</b></pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-ct</span><em>Content type</em></div>
+      <p><code>doc</code>, <code>med</code> or <code>all</code> — which kinds of message to copy.</p>
+      <pre>/clone https://t.me/c/123/120-260 <b>-ct</b> med</pre></div>
+    <div class="card"><div class="card-h"><span class="flag">-ex</span><em>Exclude extensions</em></div>
+      <p>Space-separated extensions to skip.</p></div>
+    <div class="card"><div class="card-h"><span class="flag">-mn -xn</span><em>Filename filter</em></div>
+      <p>Regex that filenames must match (<code>-mn</code>) or must not match (<code>-xn</code>).</p></div>
+    <div class="card"><div class="card-h"><span class="flag">-mc -xc</span><em>Caption filter</em></div>
+      <p>Same idea, applied to the message caption.</p></div>
+  </div>
+  <div class="note"><b class="lab">Before you clone Telegram links</b>
+    <p>Telegram clone runs on <em>your</em> session. Store it with <code>/login</code> (it's kept encrypted; <code>/lockmysession</code> locks it), then set destinations and filters under <code>/usettings</code> → Clone Settings.</p>
+  </div>
+  <div class="note warn"><b class="lab">Switched-off flags</b>
+    <p>The owner can disable <code>-b</code> (<code>DISABLE_BULK</code>), <code>-i</code> (<code>DISABLE_MULTI</code>), <code>-d</code> (<code>DISABLE_SEED</code>) and <code>-ff</code> (<code>DISABLE_FF_MODE</code>). The task then refuses to start rather than ignoring the flag.</p>
+  </div>
+  </div></details>
+<div class="empty hidden" id="noflags">No flag matches that filter.</div>
+</div></section>
+
+<section id="usettings"><div class="wrap">
+  <p class="chap"><b>05</b>User Settings</p>
+  <h2><code>/usettings</code> — your personal defaults</h2>
+  <p class="note tip"><b>Looking for one specific setting?</b> <a href="#locator">Chapter 07</a> lists every button in both menus with its exact page and position, and it’s searchable.</p>
+  <p>These belong to your account and apply to every task you start, without needing flags. They are grouped into menus; each option has a <b>Set/Change</b> button and a <b>Reset</b> to fall back to the bot default.</p>
+
+  <div class="note warn"><b class="lab">Priority — read this once</b>
+    <p>For any setting that exists at both levels, resolution is: <strong>task flag → your user setting → bot config</strong>. A user-level value <em>always</em> beats the bot config, survives restarts, and ignores edits to <code>config.py</code>. If a setting seems stuck at an old value, check <code>/usettings</code> first and hit <b>Reset</b>.</p>
+  </div>
+
+  <p>The main menu has eight groups plus <b>Export</b> and <b>Import</b>, which save and restore everything below as a file.</p>
+
+  
+  <h3>See it in Telegram, step by step</h3>
+  <p>This phone replays the bot's real <code>/usettings</code> menus — same text, same buttons, same order. Pick a walkthrough and press <b>Next step</b>, or switch to <b>Explore freely</b> and tap through every menu yourself.</p>
+  <div class="tgsim" data-bot="usettings" aria-label="Interactive /usettings walkthrough"></div>
+
+  <details class="more"><summary><span class="dt">Every /usettings option, in text</span><span class="dh">same menus as the phone above</span></summary><div class="more-body">
+<h4>Leech</h4>
+  <div class="tw"><table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Thumbnail Settings</b></td><td>Submenu: default thumbnail, Auto Thumbnail (TMDb lookup), and the default screenshot grid, e.g. <code>2x2</code></td></tr>
+    <tr><td><b>Leech Split Size</b></td><td>Your split size. Prompt shows <code>PREMIUM_USER: true/false</code> — the quickest premium check</td></tr>
+    <tr><td><b>Leech Dump Chats</b></td><td>A name → chat list. Every upload is <em>copied</em> to all of them, and you can pick one as the primary destination with <code>-ud</code> — see <a href="#leech">ch. 10</a></td></tr>
+    <tr><td><b>Leech Prefix / Suffix</b></td><td>Text wrapped around every filename. HTML allowed</td></tr>
+    <tr><td><b>Leech Caption</b></td><td>Custom caption template for uploads</td></tr>
+    <tr><td><b>Document / Media</b></td><td>Send as document or as streamable media</td></tr>
+    <tr><td><b>Equal Splits · Media Group</b></td><td>Equal-sized parts; post split parts as an album</td></tr>
+  </table></div>
+
+  <h4>Mirror</h4>
+  <div class="tw"><table>
+    <tr><th>Group</th><th>Settings</th></tr>
+    <tr><td><b>RClone Tools</b></td><td><code>RCLONE_CONFIG</code> (upload your own <code>rclone.conf</code>), <code>RCLONE_PATH</code>, <code>RCLONE_FLAGS</code></td></tr>
+    <tr><td><b>GDrive Tools</b></td><td><code>TOKEN_PICKLE</code>, <code>GDRIVE_ID</code>, <code>INDEX_URL</code>, Drive Upload SA, Drive Category</td></tr>
+    <tr><td><b>Mega Tools</b></td><td>Account email and password</td></tr>
+    <tr><td><b>Seedr Tools</b></td><td>Account login — only shown while <code>DISABLE_SEEDR</code> is off</td></tr>
+    <tr><td><b>Drive Categories</b></td><td>Toggle in the header — only shown when <code>DRIVE_CATEGORY_MODE</code> is on</td></tr>
+  </table></div>
+
+  <h4>Uphoster</h4>
+  <p>Gofile, BuzzHeavier, PixelDrain, DevUploads and VikingFile — tokens and folder ids for <code>/uphoster</code>.</p>
+
+  <h4>FF Media</h4>
+  <div class="tw"><table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>FFmpeg Cmds</b></td><td>Your own preset dict. <strong>Overrides the bot's entirely</strong> — a frequent source of "my config change did nothing"</td></tr>
+    <tr><td><b>Metadata</b></td><td>Default container metadata</td></tr>
+    <tr><td><b>Audio / Video / Subtitle Metadata</b></td><td>Per-stream metadata applied to each matching stream</td></tr>
+  </table></div>
+
+  <h4>Clone</h4>
+  <div class="tw"><table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>User Session</b></td><td>Your stored, encrypted Telegram session — lock and unlock it here or with <code>/lockmysession</code></td></tr>
+    <tr><td><b>Destinations</b></td><td>Named chats you can pick with <code>-ud</code> on <code>/clone</code></td></tr>
+    <tr><td><b>Content Type</b></td><td><code>doc</code>, <code>med</code> or <code>all</code></td></tr>
+    <tr><td><b>Excluded Ext</b></td><td>Extensions Telegram clone skips</td></tr>
+    <tr><td><b>Regex Filters</b></td><td>Include/exclude rules for filenames and captions</td></tr>
+  </table></div>
+
+  <h4>YT-DLP</h4>
+  <div class="tw"><table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>YT-DLP Options</b></td><td>Default yt-dlp option dict</td></tr>
+    <tr><td><b>Cookie File</b></td><td>Your <code>cookies.txt</code> for age/login-gated sites</td></tr>
+    <tr><td><b>Use Owner / Your cookie</b></td><td>Which cookie file downloads use</td></tr>
+    <tr><td><b>YT Description · Tags · Category Id · Privacy Status</b></td><td>Defaults for <code>-yt</code> uploads</td></tr>
+  </table></div>
+
+  <h4>Misc</h4>
+  <div class="tw"><table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td><b>Excluded Extensions</b></td><td>Space-separated, no dots. <em>Replaces</em> the bot list rather than adding to it — and an empty value of your own switches the bot list off for you</td></tr>
+    <tr><td><b>Name Swap</b></td><td>Your default <code>-ns</code> rules</td></tr>
+    <tr><td><b>Upload Paths</b></td><td>Named shortcuts you can pass to <code>-up</code></td></tr>
+  </table></div>
+
+  <h4>General</h4>
+  <p>Swap the default upload target between Drive and rclone, and choose between the owner's tokens and config or your own.</p>
+
+  </div></details>
+<div class="note tip"><b class="lab">Own credentials</b>
+    <p>Uploading your own <code>rclone.conf</code> or <code>token.pickle</code> lets you mirror to <em>your</em> storage on a shared bot. Reference them with the <code>mrcc:</code> (rclone) and <code>mtp:</code> (token.pickle) prefixes, or just set them here and skip the prefixes entirely.</p>
+  </div>
+</div></section>
+
+<section id="bsettings"><div class="wrap">
+  <p class="chap"><b>06</b>Bot Settings</p>
+  <h2><code>/bsettings</code> — bot-wide configuration</h2>
+  <p class="note tip"><b>Looking for one specific variable?</b> <a href="#locator">Chapter 07</a> maps every one of them to a page number and position, and it’s searchable.</p>
+  <p>Sudo only. <b>Config Variables</b> paginates 140 settings <strong>10 per page, in source order</strong> — so they're grouped by theme, and page number is the fastest way to navigate.</p>
+
+  <div class="note"><b class="lab">Finding a variable</b>
+    <p>Page ≈ (position in <code>config.py</code>) ÷ 10. The leech cluster — <code>LEECH_SPLIT_SIZE</code>, <code>MEDIA_GROUP</code>, <code>USE_HYPER</code>, <code>HYPER_THREADS</code> — sits on <strong>page 8</strong>. Boolean settings show <b>True</b>/<b>False</b> buttons instead of a text prompt.</p>
+  </div>
+
+  
+  <h3>See it in Telegram, step by step</h3>
+  <p>The owner-side <code>/bsettings</code> menus, replayed from the code. Walk through a common admin task, or explore every page, including the 14 Config Variables pages.</p>
+  <div class="tgsim" data-bot="bsettings" aria-label="Interactive /bsettings walkthrough"></div>
+
+  <details class="more"><summary><span class="dt">Bot variables grouped by topic</span><span class="dh">queues, leech, clone, reliability</span></summary><div class="more-body">
+<h4>Queueing &amp; limits</h4>
+  <div class="tw"><table>
+    <tr><th>Variable</th><th>Meaning</th><th>Default</th></tr>
+    <tr><td><code>QUEUE_ALL</code></td><td>Max download+upload tasks combined</td><td>0 = unlimited</td></tr>
+    <tr><td><code>QUEUE_DOWNLOAD</code></td><td>Max simultaneous downloads</td><td>0</td></tr>
+    <tr><td><code>QUEUE_UPLOAD</code></td><td>Max simultaneous uploads</td><td>0</td></tr>
+    <tr><td><code>BOT_MAX_TASKS</code></td><td>Hard ceiling across the bot</td><td>0</td></tr>
+    <tr><td><code>USER_MAX_TASKS</code></td><td>Per-user ceiling</td><td>0</td></tr>
+    <tr><td><code>STORAGE_LIMIT</code></td><td>Free GB to keep in reserve; tasks cancel past it</td><td>0</td></tr>
+    <tr><td><code>TORRENT_TIMEOUT</code></td><td>Drop dead torrents after N seconds</td><td>0</td></tr>
+  </table></div>
+
+  <h4>Leech &amp; transmission</h4>
+  <div class="tw"><table>
+    <tr><th>Variable</th><th>Meaning</th><th>Default</th></tr>
+    <tr><td><code>LEECH_LOG_CHAT</code></td><td><strong>Primary</strong> destination for all leeches. <code>chat_id</code> or <code>chat_id|topic_id</code>. Renamed from <code>LEECH_DUMP_CHAT</code> in v3.1.10</td><td>empty</td></tr>
+    <tr><td><code>LEECH_DUMP_CHATS</code></td><td>Named destinations you can pick per task with <code>-ud</code>, e.g. <code>{"movies": -100123…}</code></td><td>empty</td></tr>
+    <tr><td><code>LEECH_SPLIT_SIZE</code></td><td>Split size in bytes. A value of 0, the old 2 GB default, or anything above the account ceiling is reset to the ceiling at startup</td><td>2 GB / 4 GB premium</td></tr>
+    <tr><td><code>TRANSMISSION_MODE</code></td><td><code>bot</code>, <code>user</code>, or <code>both</code></td><td>both</td></tr>
+    <tr><td><code>USER_SESSION_STRING</code></td><td>Premium account session — unlocks 4 GB splits</td><td>empty</td></tr>
+    <tr><td><code>USE_HYPER</code></td><td>Parallel Telegram transfers across clients</td><td>True</td></tr>
+    <tr><td><code>HELPER_TOKENS</code></td><td>Extra bot tokens; what makes hyper mode actually parallel</td><td>empty</td></tr>
+    <tr><td><code>EQUAL_SPLITS</code></td><td>Equal-sized parts rather than fill-then-remainder</td><td>False</td></tr>
+    <tr><td><code>MEDIA_GROUP</code></td><td>Post split parts as an album</td><td>False</td></tr>
+    <tr><td><code>AS_DOCUMENT</code></td><td>Always send as document</td><td>False</td></tr>
+  </table></div>
+
+  <h4>Reliability</h4>
+  <div class="tw"><table>
+    <tr><th>Variable</th><th>Meaning</th><th>Default</th></tr>
+    <tr><td><code>INC_TASK_RESUME</code></td><td>Replay unfinished tasks after a restart</td><td>False</td></tr>
+    <tr><td><code>INC_TASK_NOTIFY</code></td><td>Report what was interrupted</td><td>False</td></tr>
+    <tr><td><code>DATABASE_URL</code></td><td>MongoDB — required for both of the above</td><td>empty</td></tr>
+    <tr><td><code>CPU_LIMIT</code></td><td>CPU cap for SABnzbd/JDownloader</td><td>20</td></tr>
+    <tr><td><code>THROTTLE_SERVICES</code></td><td>Pause services during ffmpeg: auto/always/never</td><td>auto</td></tr>
+  </table></div>
+
+  <h4>Telegram clone &amp; user sessions</h4>
+  <div class="tw"><table>
+    <tr><th>Variable</th><th>Meaning</th><th>Default</th></tr>
+    <tr><td><code>CLONE_DUMP_CHATS</code></td><td>Named destinations for Telegram clone</td><td>empty</td></tr>
+    <tr><td><code>CLONE_CONTENT_TYPE</code></td><td><code>doc</code>, <code>med</code> or <code>all</code></td><td>all</td></tr>
+    <tr><td><code>CLONE_EXCLUDED_EXTENSIONS</code></td><td>Extensions Telegram clone skips</td><td>empty</td></tr>
+    <tr><td><code>CLONE_FILTERS</code></td><td>Regex include/exclude rules for names and captions</td><td>empty</td></tr>
+    <tr><td><code>CLONE_TG_LIMIT</code></td><td>Max messages per clone task. 0 = no cap</td><td>10000</td></tr>
+    <tr><td><code>USER_SESSION_KEY_TTL</code></td><td>Seconds a user's unlock key stays cached</td><td>43200</td></tr>
+    <tr><td><code>USER_SESSION_IDLE</code></td><td>Seconds before an idle user client is dropped</td><td>600</td></tr>
+    <tr><td><code>USER_SESSION_MAX_CLIENTS</code></td><td>Most user clients alive at once</td><td>8</td></tr>
+  </table></div>
+
+  <h4>Processing &amp; content</h4>
+  <div class="tw"><table>
+    <tr><th>Variable</th><th>Meaning</th></tr>
+    <tr><td><code>FFMPEG_CMDS</code></td><td>Named preset dict — see <a href="#ffmpeg">ch. 08</a></td></tr>
+    <tr><td><code>EXCLUDED_EXTENSIONS</code></td><td>Space-separated, no dots</td></tr>
+    <tr><td><code>NAME_SWAP</code></td><td>Default rename rules</td></tr>
+    <tr><td><code>ALLDEBRID_API_KEY</code></td><td>Enables the <code>-ad</code> flag</td></tr>
+    <tr><td><code>ALLDEBRID_NO_SEED_TIMEOUT</code></td><td>Abort a stalled magnet after N seconds. Default 180; 0 = never</td></tr>
+    <tr><td><code>FFMPEG_CORES</code></td><td>CPU cores ffmpeg may use — sets both core pinning and <code>-threads</code>; services get the rest. <code>auto</code> = 60% of allowed CPUs</td></tr>
+    <tr><td><code>PLUGIN_INDEXES</code> / <code>DISABLE_PLUGINS</code></td><td>Where <code>/plugins</code> looks for plugins, and the master switch</td></tr>
+    <tr><td><code>DISABLE_JD</code> / <code>DISABLE_NZB</code> / <code>DISABLE_SEEDR</code></td><td>Turn off whole download engines. All three default to <b>True</b></td></tr>
+    <tr><td><code>UPSTREAM_REPO</code> / <code>UPSTREAM_BRANCH</code></td><td>Update source pulled on restart</td></tr>
+  </table></div>
+
+  </div></details>
+<div class="note warn"><b class="lab">Where config actually comes from</b>
+    <p>With <code>DATABASE_URL</code> set, the bot stores config in MongoDB and merges <code>config.py</code> on boot — <em>but only for keys whose value changed since the last deploy</em>. Editing <code>config.py</code> without redeploying leaves the database copy in charge. Changing a value through <code>/bsettings</code> applies immediately and avoids the whole question.</p>
+  </div>
+</div></section>
+
+
+
+
+<!-- ══ 07 · SETTINGS LOCATOR ══ -->
+<section id="locator"><div class="wrap">
+  <p class="chap"><b>07</b>Settings Locator</p>
+  <h2>Find any setting, fast</h2>
+  <p class="lede">Both settings menus are deep, and neither is alphabetical — buttons appear in the order the variables are declared in the source. Type here instead of clicking through pages.</p>
+  <div class="note"><b>How the numbering works.</b> <code>/bsettings → Config Variables</code> paginates 10 buttons per page across 14 pages, reading left‑to‑right, top‑to‑bottom. <code>DISABLE_*</code> and <code>*_LIMIT</code> variables are pulled out into <code>Module Settings</code> and are <em>not</em> on those pages. <code>/usettings</code> doesn’t paginate — each menu is one screen, and a few have a submenu.</div>
+
+  <div class="lc-bar">
+    <div class="lc-search">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="lq" type="search" placeholder="Search settings… try split, ffmpeg, queue, dump" aria-label="Search settings">
+    </div>
+    <div class="lc-chips" role="group" aria-label="Filter scope">
+      <button class="lc-chip" data-f="all" type="button">All</button>
+      <button class="lc-chip on" data-f="hot" type="button">★ Common</button>
+      <button class="lc-chip" data-f="bot" type="button">/bsettings</button>
+      <button class="lc-chip" data-f="user" type="button">/usettings</button>
+    </div>
+    <div class="lc-count" id="lcount"></div>
+  </div>
+  <div class="tw"><table id="lctable"><thead><tr><th>Setting</th><th>Menu</th><th>Where</th><th>What it does</th></tr></thead><tbody>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>ALLDEBRID_API_KEY</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 1</td><td>AllDebrid API key, used by the -ad flag to unlock links/magnets. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>AS_DOCUMENT</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 3</td><td>Send files as document instead of media. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>AUTHORIZED_CHATS</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 4</td><td>User/Chat IDs authorized to use the bot. Space-separated. Supports thread IDs with | separator. <span class="tag restart">Restart</span></td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>CMD_SUFFIX</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 4</td><td>Text appended to all bot commands. Useful for running multiple bot instances. <span class="tag restart">Restart</span></td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>CPU_LIMIT</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “CPU”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 6</td><td>CPU limit percentage for background services (SABnzbd, JDownloader). Default: 20. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>DEFAULT_UPLOAD</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 7</td><td>Default upload destination: gd (Google Drive) or rc (rclone). Default: rc. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>EXCLUDED_EXTENSIONS</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 2</td><td>File extensions to exclude from upload/clone. Space-separated. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>FFMPEG_CMDS</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 3</td><td>Custom FFmpeg command presets. Dict format. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>FFMPEG_CORES</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 4</td><td>CPUs given to FFmpeg. auto = 60% of them, all/0 = every CPU, a count (5), a percentage (75%), or a taskset list (0-4). Services take the rest. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>LEECH_CAPTION</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 9</td><td>Custom caption for leeched files. Supports HTML. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>LEECH_DUMP_CHATS</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 5</td><td>Named leech dump chats selectable per task via -ud flag. Dict format: {&quot;name&quot;: chat_id}. Example: {&quot;A&quot;: -100123}. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>LEECH_LOG_CHAT</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 4</td><td>Chat ID to dump all leeched files, or chat_id|topic_id for a forum topic. Leave empty to disable. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>LEECH_PREFIX</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 8</td><td>Prefix added to leeched file names. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>LEECH_SPLIT_SIZE</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 2</td><td>Split size for Telegram uploads in bytes. Default: 2GB (4GB for premium). </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>MEDIA_GROUP</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 3</td><td>Upload split parts as media group. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>QUEUE_ALL</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 10</td><td>Max parallel download+upload tasks. 0 = unlimited. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>QUEUE_DOWNLOAD</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 1</td><td>Max parallel downloading tasks. 0 = unlimited. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>QUEUE_UPLOAD</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 2</td><td>Max parallel uploading tasks. 0 = unlimited. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>SUDO_USERS</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 8</td><td>User IDs with sudo access. Space-separated. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>THROTTLE_SERVICES</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 5</td><td>Pause services during heavy ops (FFmpeg). auto=low-end only, always, never. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>THUMBNAIL_LAYOUT</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 2</td><td>Thumbnail layout for uploads. Format: WxH (e.g., 1280x720). </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>TORRENT_TIMEOUT</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 7</td><td>Dead torrent timeout in seconds. 0 = disabled. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>TRANSMISSION_MODE</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 1</td><td>Transmission mode: bot, user, or both. Default: both. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>UPSTREAM_BRANCH</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 5</td><td>Branch for updates. Default: wzv3. </td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>USER_SESSION_STRING</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 7</td><td>Pyrogram session string for user account tasks. <span class="tag restart">Restart</span></td></tr>
+<tr class="lc-row hot" data-scope="bot" data-hot="1"><td><code>USE_HYPER</code><span class="lc-star" title="Commonly used">★</span></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 4</td><td>Enable HyperDL/HyperUP for faster Telegram transfers. Default: True. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>ALLDEBRID_NO_SEED_TIMEOUT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 2</td><td>Seconds a -ad magnet may stall with no seeders before aborting. 0 = no limit. Default: 180. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>ARCHIVE_LIMIT</code><div class="lc-alt">button: “ARCHIVE”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 4</td><td>Archive (zip) size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>AUTHOR_NAME</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 9</td><td>Author name shown on Telegraph pages. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>AUTHOR_URL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 10</td><td>Author URL for Telegraph pages. Use channel URL for join button. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>AUTO_THUMBNAIL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 4</td><td>Fetch a poster from TMDb as thumbnail when no other thumbnail exists. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>BASE_URL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 5</td><td>Public URL for torrent web file selection. Format: http://ip or http://ip:port. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>BOT_MAX_TASKS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 2</td><td>Max tasks (including queued) the bot runs in parallel. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>BOT_PM</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 3</td><td>Send files/links to bot owner PM. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>BOT_TOKEN</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 6</td><td>Telegram Bot Token from @BotFather. <span class="tag restart">Restart</span><span class="tag prot">Protected</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>BUZZHEAVIER_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 2</td><td>BuzzHeavier API key for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_CONTENT_TYPE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 9</td><td>Restrict /clone to documents only (doc), media only (med) or everything (all). Default: all. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_DUMP_CHATS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 10</td><td>Default /clone destinations used when -ud is not given. Dict format: {&quot;name&quot;: chat_id}. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_EXCLUDED_EXTENSIONS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 1</td><td>Extensions skipped by /clone only, independent of EXCLUDED_EXTENSIONS. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_FILTERS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 2</td><td>Bot-wide regex filters for /clone: mn keeps matching names, xn drops them, mc and xc do the same on the caption. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_LIMIT</code><div class="lc-alt">button: “CLONE”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 6</td><td>Google Drive clone size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>CLONE_TG_LIMIT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 3</td><td>Max messages a single /clone range will copy. Default: 10000. 0 = no cap. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DATABASE_URL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 6</td><td>MongoDB connection string for persistent storage. <span class="tag restart">Restart</span><span class="tag prot">Protected</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DEBRID_LINK_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 9</td><td>Debrid-link.com API key for premium hoster support. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DEFAULT_LANG</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 5</td><td>Default bot language code. Default: en. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DELETE_LINKS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 8</td><td>Auto-delete source links/messages on task start. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DEVUPLOADS_FOLDER</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 4</td><td>DevUploads folder ID. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DEVUPLOADS_KEY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 3</td><td>DevUploads API key. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DIRECT_LIMIT</code><div class="lc-alt">button: “DIRECT”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 1</td><td>Direct link download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_BULK</code><div class="lc-alt">button: “BULK”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 4</td><td>Disable bulk (zip/unzip) operations. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_FF_MODE</code><div class="lc-alt">button: “FF_MODE”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 7</td><td>Disable FFmpeg processing mode. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_JD</code><div class="lc-alt">button: “JD”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 10</td><td>Disable JDownloader downloads. Saves ~256-500MB RAM. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_LEECH</code><div class="lc-alt">button: “LEECH”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 2</td><td>Disable all leech (download to Telegram) tasks. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_MEGA</code><div class="lc-alt">button: “MEGA”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 8</td><td>Disable Mega Processor for bot. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_MIRROR</code><div class="lc-alt">button: “MIRROR”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 3</td><td>Disable all mirror (upload to cloud) tasks. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_MULTI</code><div class="lc-alt">button: “MULTI”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 5</td><td>Disable multi-part splits. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_NZB</code><div class="lc-alt">button: “NZB”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 11</td><td>Disable SABnzbd/Usenet downloads. Saves ~100-200MB RAM. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_PLUGINS</code><div class="lc-alt">button: “PLUGINS”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 9</td><td>Disable the plugin system. Unloads every plugin and stops loading them at boot. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_RSS</code><div class="lc-alt">button: “RSS”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 13</td><td>Disable RSS feed monitoring. Saves CPU cycles. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_SEARCH</code><div class="lc-alt">button: “SEARCH”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 14</td><td>Disable torrent search plugins. Saves network I/O. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_SEED</code><div class="lc-alt">button: “SEED”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 6</td><td>Disable seeding after torrent download. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_SEEDR</code><div class="lc-alt">button: “SEEDR”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 12</td><td>Disable Seedr downloads. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_STREAM</code><div class="lc-alt">button: “STREAM”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 15</td><td>Disable streaming. Stops /stream and the stream server. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_TORRENTS</code><div class="lc-alt">button: “TORRENTS”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 1</td><td>Disable all torrent downloads. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DISABLE_YTDLP</code><div class="lc-alt">button: “YTDLP”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › On/Off Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 16</td><td>Disable YouTube/YT-DLP downloads. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DRIVE_CATEGORY_MODE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 2</td><td>Let users set their own Drive upload categories in /usettings. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>DRIVE_CATEGORY_SA</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 3</td><td>Email given reader access on uploads that go outside GDRIVE_ID. Empty = skip. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>ENABLE_TELEMETRY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 3</td><td>Send crash reports to telemetry.wzmlx.com to help fix bugs. Default: True. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>EQUAL_SPLITS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 1</td><td>Split files into equal parts of LEECH_SPLIT_SIZE. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>EXTRACT_LIMIT</code><div class="lc-alt">button: “EXTRACT”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 3</td><td>Extracted file size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>FILELION_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 4</td><td>FileLion.cc API key for direct download support. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>FORCE_SUB_IDS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 6</td><td>Channel/Group IDs for force subscription. Space-separated. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GDRIVE_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 7</td><td>Google Drive folder/TeamDrive ID for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GD_DESP</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 8</td><td>Description for Google Drive uploads. Default: Uploaded with WZ Bot. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GD_DL_LIMIT</code><div class="lc-alt">button: “GD DL”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 4</td><td>Google Drive download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GOFILE_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 7</td><td>Gofile.io API token for file uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GOFILE_AUTO_CREATE_FOLDER</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 9</td><td>With no GOFILE_FOLDER_ID, make a folder per upload instead of using the account root. Default: False. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>GOFILE_FOLDER_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 8</td><td>Gofile.io folder ID for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HELPER_BOT_PROXIES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 10</td><td>One proxy dict per line, matching HELPER_TOKENS order. Empty line = no proxy for that bot. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HELPER_STRINGS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 8</td><td>Extra user session strings for parallel task handling. Space-separated. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HELPER_TOKENS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 7</td><td>Additional bot tokens for parallel task handling. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HELPER_USER_PROXIES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 1</td><td>One proxy dict per line, matching HELPER_STRINGS order. Empty line = no proxy for that user. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HYDRA_API_KEY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 7</td><td>Hydra API key for search. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HYDRA_IP</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 6</td><td>Hydra API IP address for search. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HYPER_CHUNK</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 7</td><td>HyperDL working chunk size in bytes. Default: 512 * 1024 (512KB). </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HYPER_PIPELINE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 6</td><td>Concurrent GetFile requests per HyperDL part. Default: 4. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>HYPER_THREADS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 5</td><td>Number of parallel download parts (clients). 0 = auto. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IMAGES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 3</td><td>List of image URLs or file_ids for the gallery. Managed via /addimage command. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IMDB_TEMPLATE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 2</td><td>Optional HTML template for IMDB results. If empty, uses Rich Messages. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IMG_PAGE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 5</td><td>Number of pages to search for each keyword in IMG_SEARCH. Each page has ~70 images. Default: 1 </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IMG_SEARCH</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 4</td><td>Comma-separated keywords to auto-fetch wallpaper images on startup. e.g. anime, nature, space </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IMG_SOURCES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 7</td><td>List of image sources to fetch from. Options: wallpaperflare, peapix, wallhaven. Default: wallpaperflare </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>INC_TASK_NOTIFY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 8</td><td>Notify about incomplete tasks after restart. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>INC_TASK_RESUME</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 9</td><td>Auto-resume incomplete tasks on restart. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>INDEX_URL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 10</td><td>Google Drive Index URL for direct links. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>INSTADL_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 1</td><td>Instagram downloader API key. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>IS_TEAM_DRIVE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 1</td><td>Set True for TeamDrive uploads. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>JD_EMAIL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 2</td><td>JDownloader account email for premium downloads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>JD_LIMIT</code><div class="lc-alt">button: “JD”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 7</td><td>JDownloader download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>JD_PASS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 3</td><td>JDownloader account password. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>LEECH_FONT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 1</td><td>Font style for captions: b, i, u, s, code, spoiler. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>LEECH_LIMIT</code><div class="lc-alt">button: “LEECH”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 2</td><td>Leech (Telegram upload) size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>LEECH_SUFFIX</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 10</td><td>Suffix added to leeched file names. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>LINKS_LOG_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 6</td><td>Chat ID for link logging. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>LOGIN_PASS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 6</td><td>Password to skip token system. Leave empty to disable. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEDIA_STORE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 5</td><td>Store media metadata for re-upload. Default: True. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEGA_EMAIL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 4</td><td>Mega.nz account email for premium. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEGA_LIMIT</code><div class="lc-alt">button: “MEGA”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 2</td><td>Mega download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEGA_PASSWORD</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 5</td><td>Mega.nz account password. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEM_BUDGET</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 8</td><td>Memory ceiling for transfer buffers in MB. 0 = auto (15% of the container limit). </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MEM_DEEP_STATS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 9</td><td>Add object counts to /memory. Costs a full GC scan per call. Default: False. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>MIRROR_LOG_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 7</b> · item 7</td><td>Chat ID(s) for mirror logs. Space-separated for multiple. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>NAME_SWAP</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 8</td><td>Rename files using pattern. Format: old:new|old2:new2. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>NZB_LIMIT</code><div class="lc-alt">button: “NZB”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 8</td><td>Usenet download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>OWNER_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 9</td><td>Telegram User ID of the bot owner. <span class="tag restart">Restart</span><span class="tag prot">Protected</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>PIXELDRAIN_KEY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 3</b> · item 10</td><td>PixelDrain API key for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>PLAYLIST_LIMIT</code><div class="lc-alt">button: “PLAYLIST”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 1</td><td>Max items to download from a playlist. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>PLUGIN_INDEXES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 2</b> · item 10</td><td>Extra plugin index URLs on top of the official one. Each must be a JSON file holding a plugins list. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>PROTECTED_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 1</td><td>ProtectedFiles.cc API key. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_FLAGS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 3</td><td>Rclone flags. Format: key:value|key|key:value. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_PATH</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 4</td><td>Default rclone remote path for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_SERVE_PASS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 8</td><td>Password for rclone serve authentication. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_SERVE_PORT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 9</td><td>Port for rclone serve. Default: 8081. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_SERVE_URL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 5</td><td>Public URL for rclone serve. Format: http://ip. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RCLONE_SERVE_USER</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 7</td><td>Username for rclone serve authentication. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RC_DL_LIMIT</code><div class="lc-alt">button: “RC DL”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 5</td><td>Rclone download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RSS_CHAT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 10</td><td>Chat ID for RSS feed notifications. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RSS_DELAY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 1</td><td>RSS feed check interval in seconds. Default: 600. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>RSS_SIZE_LIMIT</code><div class="lc-alt">button: “RSS SIZE”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 7</td><td>RSS download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEARCH_API_LINK</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 2</td><td>Search API app URL for multi-search. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEARCH_LIMIT</code><div class="lc-alt">button: “SEARCH”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 8</td><td>Max search results per site. 0 = default API limit. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEARCH_PLUGINS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 3</td><td>qBittorrent search plugin URLs. List format. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEEDR_DELETE_FOLDER</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 8</td><td>Delete folder from Seedr after downloading locally. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEEDR_EMAIL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 6</td><td>Seedr account email for magnet mirroring. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEEDR_LIMIT</code><div class="lc-alt">button: “SEEDR”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 9</td><td>Seedr download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SEEDR_PASSWORD</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 6</b> · item 7</td><td>Seedr account password. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SET_COMMANDS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 4</td><td>Auto-set bot commands on start. Default: True. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>SHOW_CLOUD_LINK</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 10</b> · item 6</td><td>Show cloud link button on leeched files. Default: True. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STATUS_LIMIT</code><div class="lc-alt">button: “STATUS”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 9</td><td>Number of status messages to show. Default: 10. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STATUS_UPDATE_INTERVAL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 5</td><td>Status message refresh interval in seconds. Default: 15. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STOP_DUPLICATE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 6</td><td>Stop if file/folder exists in GDrive. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STORAGE_LIMIT</code><div class="lc-alt">button: “STORAGE”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 2</b> · item 5</td><td>Minimum free storage to maintain in GB. Downloads cancelled if exceeded. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAMWISH_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 7</td><td>StreamWish API key for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAM_CHUNK</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 1</td><td>Streaming chunk size in bytes, capped at 1 MiB. Default: 1048576. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAM_GATE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 3</td><td>Process-wide ceiling on concurrent GetFile calls. Default: 96. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAM_PER_CLIENT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 9</b> · item 2</td><td>Concurrent playback streams allowed per bot. Raise for more simultaneous viewers, lower if Telegram floods. Default: 6. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAM_PIPELINE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 8</b> · item 10</td><td>Concurrent GetFile requests for /dl downloads. Default: 8. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>STREAM_TOKENS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 1</b> · item 9</td><td>Bot tokens dedicated to /stream and /dl. If set, streaming uses these and is isolated from mirror/leech load. Falls back to HELPER_TOKENS. <span class="tag restart">Restart</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TELEGRAM_API</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 9</td><td>Telegram API ID from my.telegram.org. <span class="tag restart">Restart</span><span class="tag prot">Protected</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TELEGRAM_HASH</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 11</b> · item 10</td><td>Telegram API Hash from my.telegram.org. <span class="tag restart">Restart</span><span class="tag prot">Protected</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TG_PROXY</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 1</td><td>SOCKS5 proxy for Telegram connection. Format: socks5://user:pass@ip:port. <span class="tag restart">Restart</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TIMEZONE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 8</td><td>Timezone for messages. Default: Asia/Kolkata. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TMDB_ACCESS_TOKEN</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 3</td><td>TMDb API key (v3) or Read Access Token (v4), used by AUTO_THUMBNAIL. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>TORRENT_LIMIT</code><div class="lc-alt">button: “TORRENT”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 3</td><td>Torrent download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>UPLOAD_PATHS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 1</td><td>Custom upload paths per extension. Dict format. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>UPSTREAM_REPO</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 4</td><td>GitHub repo URL for bot updates. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USENET_SERVERS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 6</td><td>Usenet server configurations. List of dicts. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USER_MAX_TASKS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 9</td><td>Max concurrent tasks per user. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USER_SESSION_IDLE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 9</td><td>Seconds an idle user-session client stays connected before it is stopped. Default: 600. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USER_SESSION_KEY_TTL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 8</td><td>Seconds an unlocked user-session key stays in memory before the user must unlock again. Default: 43200 (12h). </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USER_SESSION_MAX_CLIENTS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 13</b> · item 10</td><td>Max user-session clients kept connected at once. Default: 8. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USER_TIME_INTERVAL</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 10</td><td>Cooldown between tasks per user in seconds. 0 = disabled. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USE_IMAGES</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 5</b> · item 6</td><td>Enable random photo backgrounds on bot messages. Requires IMAGES list. Default: False <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>USE_SERVICE_ACCOUNTS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 2</td><td>Use Google Service Accounts. Default: False. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>VERIFY_TIMEOUT</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 12</b> · item 5</td><td>Verification timeout in seconds. 0 = disabled. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>VIKINGFILE_FOLDER</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 6</td><td>VikingFile.to folder ID. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>VIKINGFILE_HASH</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 4</b> · item 5</td><td>VikingFile.to hash for uploads. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>WEB_ACCESS_PASSWORD</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 4</td><td>Secret for deriving proxy passwords. Set once, use derived passwords in browser. Empty = auto-generated. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>WEB_PINCODE</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 5</td><td>Ask for pincode in web file selection. Default: True. <span class="tag bool">On/Off</span></td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YTDLP_LIMIT</code><div class="lc-alt">button: “YTDLP”</div></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Module Settings › Limit Settings</div></td><td class="lc-loc"><b>Page 1</b> · item 10</td><td>yt-dlp download size limit in GB. 0 = unlimited. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YT_CATEGORY_ID</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 9</td><td>YouTube video category ID. Default: 22 (People &amp; Blogs). </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YT_DESP</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 7</td><td>Description for YouTube uploads. Default: Uploaded with WZML-X bot. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YT_DLP_OPTIONS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 6</td><td>Default yt-dlp options. Format: key:value|key:value. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YT_PRIVACY_STATUS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 10</td><td>YouTube upload privacy: public, unlisted, or private. </td></tr>
+<tr class="lc-row" data-scope="bot" data-hot="0"><td><code>YT_TAGS</code></td><td><span class="lc-cmd">/bsettings</span><div class="lc-path">Config Variables</div></td><td class="lc-loc"><b>Page 14</b> · item 8</td><td>Tags for YouTube uploads. List format. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>AS_DOCUMENT</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Send As Media / Send As Document”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 7</td><td>Send uploads as documents rather than playable media. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>EXCLUDED_EXTENSIONS</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Excluded Extensions”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Misc Settings</div></td><td class="lc-loc">item 1</td><td>File extensions dropped after download, before upload. Applies to leech and mirror, not /clone. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>FFMPEG_CMDS</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “FFmpeg Cmds”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">FF Media Settings</div></td><td class="lc-loc">item 1</td><td>Your personal preset dict. Shadows the bot-wide FFMPEG_CMDS entirely. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>GDRIVE_ID</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Default Gdrive ID”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › GDrive Tools</div></td><td class="lc-loc">item 2</td><td>Default Google Drive folder or Team Drive ID. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>LEECH_CAPTION</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Leech Caption”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 6</td><td>Template for the caption under each uploaded file. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>LEECH_DUMP_CHATS</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Leech Dump Chats”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 3</td><td>Your own named leech destinations (name and chat id per line). Selectable per task with -ud and merged over the owner&#x27;s list. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>LEECH_PREFIX</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Leech Prefix”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 4</td><td>Text prepended to every uploaded filename. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>LEECH_SPLIT_SIZE</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Leech Split Size”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 2</td><td>Your personal split size. Caps at 2 GB, or 4 GB on a premium user session. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>MEDIA_GROUP</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Enable/Disable Media Group”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 9</td><td>Group split parts into one album instead of separate messages. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>RCLONE_PATH</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Default Rclone Path”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › RClone Tools</div></td><td class="lc-loc">item 2</td><td>Default remote:path for mirrors. </td></tr>
+<tr class="lc-row hot" data-scope="user" data-hot="1"><td><code>THUMBNAIL</code><span class="lc-star" title="Commonly used">★</span><div class="lc-alt">button: “Custom Thumbnail”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings › Thumbnail Settings</div></td><td class="lc-loc">item 1</td><td>Custom thumbnail image used for every leeched file. A View Thumb button appears next to it once one is saved. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>AUDIO_METADATA</code><div class="lc-alt">button: “Audio Metadata”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">FF Media Settings</div></td><td class="lc-loc">item 3</td><td>Metadata applied to audio streams. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>AUTO_THUMBNAIL</code><div class="lc-alt">button: “Enable/Disable Auto Thumbnail”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings › Thumbnail Settings</div></td><td class="lc-loc">item 2 (3 once a thumbnail exists)</td><td>Generate a thumbnail from the video automatically. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>BUZZHEAVIER_FOLDER_ID</code><div class="lc-alt">button: “BuzzHeavier Folder ID”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › BuzzHeavier Tools</div></td><td class="lc-loc">item 2</td><td>BuzzHeavier folder to upload into. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>BUZZHEAVIER_TOKEN</code><div class="lc-alt">button: “BuzzHeavier Token”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › BuzzHeavier Tools</div></td><td class="lc-loc">item 1</td><td>Your BuzzHeavier API token. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>CLONE_CONTENT_TYPE</code><div class="lc-alt">button: “Content Type”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Clone Settings</div></td><td class="lc-loc">item 3 (4 while Lock Now is shown)</td><td>Restrict /clone to documents only (doc), media only (med) or everything (all). </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>CLONE_DUMP_CHATS</code><div class="lc-alt">button: “Destinations”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Clone Settings</div></td><td class="lc-loc">item 2 (3 while Lock Now is shown)</td><td>Default destinations for /clone when -ud is not given. Dict of name to chat id. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>CLONE_EXCLUDED_EXTENSIONS</code><div class="lc-alt">button: “Excluded Ext”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Clone Settings</div></td><td class="lc-loc">item 4 (5 while Lock Now is shown)</td><td>Extensions skipped by /clone only. Independent of the leech/mirror list. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>CLONE_FILTERS</code><div class="lc-alt">button: “Regex Filters”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Clone Settings</div></td><td class="lc-loc">item 5 (6 while Lock Now is shown)</td><td>Regex applied to every /clone task: mn keeps matching names, xn drops them, mc and xc do the same on the caption. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>DEFAULT_UPLOAD</code><div class="lc-alt">button: “Swap to {} Mode”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">General Settings</div></td><td class="lc-loc">item 1</td><td>Choose whether /mirror uploads to Google Drive (API) or rclone by default. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>DEVUPLOADS_FOLDER</code><div class="lc-alt">button: “DevUploads Folder ID”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › DevUploads Tools</div></td><td class="lc-loc">item 2</td><td>DevUploads folder to upload into. Empty uses the root. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>DEVUPLOADS_KEY</code><div class="lc-alt">button: “DevUploads API Key”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › DevUploads Tools</div></td><td class="lc-loc">item 1</td><td>Your DevUploads API key. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>DRIVE_CAT</code><div class="lc-alt">button: “User Drive Categories”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › GDrive Tools</div></td><td class="lc-loc">item 1</td><td>Your own drive category list (name, drive id, optional index link). </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>drive_cat_mode</code><div class="lc-alt">button: “Drive Categories: ON/OFF”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings</div></td><td class="lc-loc">item 1</td><td>Turn drive categories on for your mirrors. Only shown when the owner enabled DRIVE_CATEGORY_MODE. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>EQUAL_SPLITS</code><div class="lc-alt">button: “Enable/Disable Equal Splits”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 8</td><td>Split into equal-sized parts instead of filling each to the cap. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>EXPORT</code><div class="lc-alt">button: “Export”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">User Settings (main menu)</div></td><td class="lc-loc">item 9</td><td>Export your settings to a passphrase-encrypted JSON file. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>GOFILE_AUTO_CREATE_FOLDER</code><div class="lc-alt">button: “Auto-Create Folder”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › Gofile Tools</div></td><td class="lc-loc">item 3</td><td>Create a folder on Gofile per task automatically. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>GOFILE_FOLDER_ID</code><div class="lc-alt">button: “Gofile Folder ID”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › Gofile Tools</div></td><td class="lc-loc">item 2</td><td>Gofile folder to upload into. Empty uploads to the root. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>GOFILE_TOKEN</code><div class="lc-alt">button: “Gofile Token”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › Gofile Tools</div></td><td class="lc-loc">item 1</td><td>Your Gofile API token. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>IMPORT</code><div class="lc-alt">button: “Import”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">User Settings (main menu)</div></td><td class="lc-loc">item 10</td><td>Restore settings from an exported file; send it with the passphrase as caption. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>INDEX_URL</code><div class="lc-alt">button: “Default Index URL”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › GDrive Tools</div></td><td class="lc-loc">item 3</td><td>Index URL used to build direct links. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>LEECH_SUFFIX</code><div class="lc-alt">button: “Leech Suffix”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings</div></td><td class="lc-loc">item 5</td><td>Text appended to every uploaded filename. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>MEGA_EMAIL</code><div class="lc-alt">button: “Mega Email”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › Mega Tools</div></td><td class="lc-loc">item 1</td><td>Your Mega account email. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>MEGA_PASSWORD</code><div class="lc-alt">button: “Mega Password”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › Mega Tools</div></td><td class="lc-loc">item 2</td><td>Your Mega account password. The button appears once an email is set. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>METADATA</code><div class="lc-alt">button: “Metadata”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">FF Media Settings</div></td><td class="lc-loc">item 2</td><td>Global metadata written into output files (key=value|key=value). </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>NAME_SWAP</code><div class="lc-alt">button: “Name Swap”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Misc Settings</div></td><td class="lc-loc">item 2</td><td>Regex find/replace applied to filenames. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>PIXELDRAIN_KEY</code><div class="lc-alt">button: “PixelDrain Key”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › PixelDrain Tools</div></td><td class="lc-loc">item 1</td><td>Your PixelDrain API key. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>RCLONE_CONFIG</code><div class="lc-alt">button: “Rclone Config”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › RClone Tools</div></td><td class="lc-loc">item 1</td><td>Your rclone.conf. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>RCLONE_FLAGS</code><div class="lc-alt">button: “Rclone Flags”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › RClone Tools</div></td><td class="lc-loc">item 3</td><td>Extra flags passed to every rclone call. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>RESET_ALL</code><div class="lc-alt">button: “Reset All”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">User Settings (main menu)</div></td><td class="lc-loc">item 11</td><td>Wipe all your saved settings after a confirmation. Only shown once you have saved something. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>SEEDR_DELETE_FOLDER</code><div class="lc-alt">button: “Delete Folder: ON/OFF”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › Seedr Tools</div></td><td class="lc-loc">item 3 (2 until an email is set)</td><td>Delete the Seedr folder after the download finishes. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>SEEDR_EMAIL</code><div class="lc-alt">button: “Seedr Email”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › Seedr Tools</div></td><td class="lc-loc">item 1</td><td>Your Seedr account email. The Seedr Tools button is hidden when DISABLE_SEEDR is on. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>SEEDR_PASSWORD</code><div class="lc-alt">button: “Seedr Password”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › Seedr Tools</div></td><td class="lc-loc">item 2</td><td>Your Seedr account password. The button appears once an email is set. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>STOP_DUPLICATE</code><div class="lc-alt">button: “Enable/Disable Stop Duplicate”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › GDrive Tools</div></td><td class="lc-loc">item 5</td><td>Refuse a mirror if the name already exists. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>SUBTITLE_METADATA</code><div class="lc-alt">button: “Subtitle Metadata”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">FF Media Settings</div></td><td class="lc-loc">item 5</td><td>Metadata applied to subtitle streams. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>THUMBNAIL_LAYOUT</code><div class="lc-alt">button: “Layout”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Leech Settings › Thumbnail Settings</div></td><td class="lc-loc">item 3 (4 once a thumbnail exists)</td><td>Grid of screenshots instead of a single thumb, e.g. 3x3. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>TOKEN_PICKLE</code><div class="lc-alt">button: “Token.pickle”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Mirror Settings › GDrive Tools</div></td><td class="lc-loc">item 4</td><td>Your Google Drive token.pickle. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>UPHOSTER_SERVICE</code><div class="lc-alt">button: “Change Destination ⇋”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings</div></td><td class="lc-loc">item 1</td><td>Pick which uphoster(s) uploads go to: Gofile, BuzzHeavier, PixelDrain, DevUploads, VikingFile (several can be ticked). </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>UPLOAD_PATHS</code><div class="lc-alt">button: “Upload Paths”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Misc Settings</div></td><td class="lc-loc">item 3</td><td>Named destinations selectable with -up. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>USE_DEFAULT_COOKIE</code><div class="lc-alt">button: “Use YOUR/OWNER Cookie”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 3</td><td>Switch between your own cookie file and the bot&#x27;s cookie file. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>USER_COOKIE_FILE</code><div class="lc-alt">button: “Cookie File”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 2</td><td>Your own cookies.txt for yt-dlp. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>USER_SESSION</code><div class="lc-alt">button: “User Session”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Clone Settings</div></td><td class="lc-loc">item 1</td><td>Your own Telegram session string, sealed with a passphrase you choose. Used by /clone for chats the bot cannot reach. Send it in private chat. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>USER_TOKENS</code><div class="lc-alt">button: “Swap to {} token/config”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">General Settings</div></td><td class="lc-loc">item 2</td><td>Use your own token.pickle / rclone.conf instead of the owner&#x27;s. <span class="tag bool">Toggle</span> </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>VIDEO_METADATA</code><div class="lc-alt">button: “Video Metadata”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">FF Media Settings</div></td><td class="lc-loc">item 4</td><td>Metadata applied to video streams. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>VIKINGFILE_FOLDER</code><div class="lc-alt">button: “VikingFile Folder”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › VikingFile Tools</div></td><td class="lc-loc">item 2</td><td>VikingFile folder to upload into. Empty uses the root. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>VIKINGFILE_HASH</code><div class="lc-alt">button: “VikingFile Hash”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">Uphoster Settings › VikingFile Tools</div></td><td class="lc-loc">item 1</td><td>Your VikingFile user hash. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>YT_CATEGORY_ID</code><div class="lc-alt">button: “YT Category ID”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 6</td><td>YouTube video category ID for uploads. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>YT_DESP</code><div class="lc-alt">button: “YT Description”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 4</td><td>Description used for YouTube uploads. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>YT_DLP_OPTIONS</code><div class="lc-alt">button: “YT-DLP Options”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 1</td><td>Default yt-dlp options for your tasks (API option names). </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>YT_PRIVACY_STATUS</code><div class="lc-alt">button: “YT Privacy Status”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 7</td><td>YouTube upload privacy: public, unlisted or private. </td></tr>
+<tr class="lc-row" data-scope="user" data-hot="0"><td><code>YT_TAGS</code><div class="lc-alt">button: “YT Tags”</div></td><td><span class="lc-cmd">/usettings</span><div class="lc-path">YT-DLP Settings</div></td><td class="lc-loc">item 5</td><td>Tags used for YouTube uploads. </td></tr>
+</tbody></table></div>
+  <div class="empty hidden" id="lcempty">Nothing matches that search.</div>
+</div></section>
+
+<section id="ffmpeg"><div class="wrap">
+  <p class="chap"><b>08</b>FFmpeg Presets</p>
+  <h2>Transcoding with <code>-ff</code></h2>
+  <p><code>FFMPEG_CMDS</code> is a dict of named presets. Each name maps to a <strong>list of complete, independent ffmpeg commands</strong>, written without the leading <code>ffmpeg</code>.</p>
+
+  <div class="note warn"><b class="lab">The mistake everyone makes</b>
+    <p>Each string in the list is its own full command. Putting <code>-del</code> in as a separate list item makes it a second command with no input, which crashes the task <em>after</em> the encode finishes:</p>
+    <pre><span class="r">"av1": ["-i mltb.video ... mltb.mkv", "-del"]</span>   <i># wrong — two commands</i>
+<b>"av1": ["-i mltb.video ... mltb.mkv -del"]</b>     <i># right — one command</i></pre>
+  </div>
+
+  <h3>The <code>mltb</code> placeholder</h3>
+  <p>Filenames are written as <code>mltb</code>, which the bot swaps for the real path. The extension you attach decides both what the preset matches and what it produces.</p>
+  <div class="tw"><table>
+    <tr><th>Token</th><th>As input — matches</th><th>As output — produces</th></tr>
+    <tr><td><code>mltb.video</code></td><td>Any video file</td><td>—</td></tr>
+    <tr><td><code>mltb.audio</code></td><td>Any audio file</td><td>—</td></tr>
+    <tr><td><code>mltb.mkv</code></td><td>Only <code>.mkv</code></td><td><code>.mkv</code> output</td></tr>
+    <tr><td><code>mltb</code></td><td>Anything</td><td>Same extension as input</td></tr>
+    <tr><td><code>mltb-tag.mkv</code></td><td>—</td><td><code>&lt;name&gt;-tag.mkv</code> — a distinct name, ideal for comparisons</td></tr>
+  </table></div>
+
+  <h4>A working AV1 preset set</h4>
+  <pre>FFMPEG_CMDS = {
+  <b>"av1"</b>:   ["-i mltb.video -threads 8 -c:v libsvtav1 -preset 8 -crf 32
+             -pix_fmt yuv420p10le -svtav1-params tune=0 -c:a copy mltb.mkv -del"],
+  <b>"av1hq"</b>: ["-i mltb.video -threads 8 -c:v libsvtav1 -preset 6 -crf 32
+             -pix_fmt yuv420p10le -svtav1-params tune=0 -c:a copy mltb.mkv -del"],
+  <b>"hevc"</b>:  ["-i mltb.video -threads 8 -c:v libx265 -preset fast -crf 28
+             -pix_fmt yuv420p10le -c:a copy mltb.mkv -del"],
+
+  <i># sample encodes — 10 min from 2:00, no -del so the source survives</i>
+  <b>"t8"</b>:  ["-ss 120 -t 600 -i mltb.video -c:v libsvtav1 -preset 8 -crf 32
+            -pix_fmt yuv420p10le -svtav1-params tune=0 -c:a copy mltb-p8crf32.mkv"],
+  <b>"t6"</b>:  ["-ss 120 -t 600 -i mltb.video -c:v libsvtav1 -preset 6 -crf 32
+            -pix_fmt yuv420p10le -svtav1-params tune=0 -c:a copy mltb-p6crf32.mkv"],
+}</pre>
+
+  <p>Besides named presets, <code>-ff</code> accepts a list literal inline. How many cores ffmpeg gets is set by <code>FFMPEG_CORES</code>.</p>
+
+  <details class="more"><summary><span class="dt">Tuning, -map pitfalls and progress quirks</span><span class="dh">for when output looks wrong</span></summary><div class="more-body">
+<h3>Tuning notes</h3>
+  <ul class="plain">
+    <li><b><code>-preset</code></b> — 0 (slowest, best) to 13. Each step up is roughly 1.5–2× faster and costs a little efficiency. Faster presets also <em>parallelise worse</em>, so CPU utilisation drops as you speed up.</li>
+    <li><b><code>-crf</code></b> — quality target. Lower is better and bigger; 32→28 is roughly +40–60% file size. Change preset and CRF one at a time or you can't attribute the result.</li>
+    <li><b><code>tune=0</code></b> — optimise for how it looks rather than for PSNR. Almost always the right choice for content people watch.</li>
+    <li><b><code>enable-variance-boost=1</code></b> — steers bits toward detailed regions. Worth trying when output looks soft.</li>
+    <li><b>Avoid <code>lp=N</code></b> — it's a 0–6 parallelism <em>level</em>, not a thread count. Out-of-range values are silently clamped.</li>
+  </ul>
+
+  <div class="note warn"><b class="lab">Careful with <code>-map 0</code></b>
+    <p>It looks like the right way to keep every audio and subtitle track, but it also feeds cover-art and thumbnail image streams to the video encoder, which fails the whole job with <code>The maximum allowed frame rate is 240 fps</code>. If you need all tracks, be explicit — the <code>?</code> makes each optional:</p>
+    <pre>-map 0:v:0 -map 0:a? -map 0:s? -map 0:t?  -c:a copy -c:s copy -c:t copy</pre>
+    <p>With a single audio track and no subtitles, just omit <code>-map</code> — ffmpeg's default selection does the right thing.</p>
+  </div>
+
+  <div class="note tip"><b class="lab">Progress reads wrong on sampled encodes</b>
+    <p>Percentage is computed against the <em>full source duration</em>, so a <code>-t 600</code> sample of a 2-hour file tops out near 8% and shows a wildly inflated ETA. Multiply the displayed percentage by <code>source_duration ÷ sample_duration</code> for the real figure.</p>
+  </div>
+</div></details>
+</div></section>
+
+<section id="queues"><div class="wrap">
+  <p class="chap"><b>09</b>Queues &amp; Throughput</p>
+  <h2>Getting the machine busy without filling the disk</h2>
+  <p>Three settings shape concurrency, and they interact with the pipeline in a way that isn't obvious. <code>QUEUE_ALL</code> caps downloads and uploads together; the other two cap each end separately. <code>0</code> means unlimited everywhere.</p>
+
+  <div class="note warn"><b class="lab">The disk trap</b>
+    <p><code>QUEUE_DOWNLOAD = 0</code> with a 50-link bulk file downloads <strong>all fifty at once</strong>, while ffmpeg drains them one at a time. Every source sits on disk for hours waiting its turn, and the volume fills. Encoding is nearly always the bottleneck — stage only a few files ahead of it.</p>
+  </div>
+
+  <h3>A sane starting point for transcoding work</h3>
+  <pre>QUEUE_ALL      = 0   <i># no combined cap</i>
+QUEUE_DOWNLOAD = 3   <i># stage ~3 files ahead of the encoder</i>
+QUEUE_UPLOAD   = 1   <i># one upload at a time, keeps parts in order</i></pre>
+  <p>The encoder never waits on a download, disk stays bounded at roughly three sources plus outputs, and because <code>-del</code> removes each source after its encode, space frees as the batch moves.</p>
+
+  <details class="more"><summary><span class="dt">Why uploads overlap, and CPU notes</span><span class="dh">optional reading</span></summary><div class="more-body">
+<h3>Why uploads overlap encodes for free</h3>
+  <p>The ffmpeg lock is released the moment an encode finishes — before the task waits for an upload slot. So the encoder is never blocked by an upload backlog:</p>
+  <pre>Task A  <b>[encode ████]</b>──────<i>[upload ░░░░]</i>
+Task B          <b>[encode ████]</b>──────<i>[upload ░░░░]</i>
+Task C                  <b>[encode ████]</b>──────<i>[upload ░░░░]</i></pre>
+  <p>This only happens across <em>separate tasks</em>. One task containing 20 files gets no overlap at all.</p>
+
+  <h3>CPU utilisation</h3>
+  <p>Seeing 70% rather than 100% during an encode is usually normal — fast presets have less to parallelise. Two things are worth checking before chasing it:</p>
+  <ul class="plain">
+    <li><b>Load average lies in containers.</b> <code>/proc/loadavg</code> isn't namespaced, so any load figure you see is the whole host's, not your slice.</li>
+    <li><b>Thread count is yours to set.</b> <code>FFMPEG_CORES</code> (default <code>auto</code>, 60% of the CPUs the container may use) pins ffmpeg and sets <code>-threads</code>. The CPU list respects cpusets but not CFS quotas, so on a quota-limited container set it explicitly.</li>
+  </ul>
+  <p>Total throughput, not peak utilisation, is the number that matters. Because SVT-AV1 scales sublinearly, two 4-core encodes generally beat one 8-core encode — though the bot serialises encodes by design, so that needs a code change.</p>
+</div></details>
+</div></section>
+
+<section id="leech"><div class="wrap">
+  <p class="chap"><b>10</b>Leech Destinations</p>
+  <h2>Where files actually land</h2>
+  <p>There are <strong>three</strong> separate destination settings with the same name and very different behaviour. Confusing them is the most common leech problem.</p>
+
+  <div class="tw"><table>
+    <tr><th>Set at</th><th>Role</th><th>Behaviour</th></tr>
+    <tr><td><code>/bsettings</code> → <code>LEECH_LOG_CHAT</code></td><td>Primary</td><td>Every leech uploads here regardless of which chat the command came from</td></tr>
+    <tr><td><code>-ud NAME</code></td><td>Primary, per task</td><td>Overrides <code>LEECH_LOG_CHAT</code> for this task, by name from <code>LEECH_DUMP_CHATS</code></td></tr>
+    <tr><td><code>-up</code> flag</td><td>Extra copy</td><td>Per-task copy destination, sent after upload</td></tr>
+    <tr><td><code>/usettings</code> → Leech Dump Chats</td><td>Extra copies</td><td>Every upload is also copied to <b>all</b> of your saved dump chats</td></tr>
+  </table></div>
+
+  <p>If <code>LEECH_LOG_CHAT</code> is empty and you pass no <code>-ud</code>, files go to <strong>whichever chat you typed the command in</strong>. That's why setting only your own dump chats looks like they're ignored — they were only ever configured to receive copies.</p>
+
+  <div class="note warn"><b class="lab">Always use the full id</b>
+    <p>A bare <code>1234567890</code> is read as a <em>user</em> id. Channels and supergroups need the <code>-100</code> prefix — a missing prefix is what produces <code>PARENT_PEER_INVALID</code> and <code>USER_NOT_PARTICIPANT</code>.</p>
+  </div>
+
+  <details class="more"><summary><span class="dt">The 4 GB checklist and split ordering</span><span class="dh">premium account setup</span></summary><div class="more-body">
+<h3>The 4 GB checklist</h3>
+  <p>Premium splits need all of these true, and any one failing silently drops you to 2 GB:</p>
+  <ol class="ol">
+    <li><code>USER_SESSION_STRING</code> generated from an account that <em>holds</em> Telegram Premium, using the same <code>TELEGRAM_API</code>/<code>TELEGRAM_HASH</code> as the bot.</li>
+    <li>The user client started cleanly — look for <code>WZ User : [name] Started!</code> in the log.</li>
+    <li><code>TRANSMISSION_MODE</code> is <code>user</code> or <code>both</code>, and you didn't pass <code>-bt</code>.</li>
+    <li>Destination is a <b>supergroup or channel</b>, not a PM — the user account can't post to a bot's DM.</li>
+    <li>Both the bot <em>and</em> the premium account are members of that chat.</li>
+    <li>Re-enter the split size <em>after</em> premium is detected — a value clamped to 2 GB earlier stays stored.</li>
+  </ol>
+
+  <div class="note tip"><b class="lab">Fast check</b>
+    <p>Open <code>/usettings</code> → Leech Split Size → <b>Change</b>. The input prompt ends with <code>PREMIUM_USER: true</code> or <code>false</code>. Note 4 GB means 4,194,304,000 bytes and displays as <b>3.91GB</b> — that's correct, not a failure.</p>
+  </div>
+
+  <h3>Split parts arriving out of order</h3>
+  <p>With <code>USE_HYPER</code> on, uploads within a task run concurrently, and nothing re-sequences them when <code>LEECH_LOG_CHAT</code> is set — so <code>part002</code> can land before <code>part001</code>. Setting <code>USE_HYPER = False</code> makes uploads sequential and fixes the order. You only give up real throughput if <code>HELPER_TOKENS</code> is populated; with a single client, hyper mode was never running uploads in parallel anyway.</p>
+</div></details>
+</div></section>
+
+<section id="recipes"><div class="wrap">
+  <p class="chap"><b>11</b>Recipes</p>
+  <h2>Worked examples</h2>
+
+  <h3>Batch-transcode a list of links</h3>
+  <p>Put one link per line in a <code>.txt</code>, send it as a document, then <strong>reply to it</strong>:</p>
+  <pre>/l <b>-b</b> <b>-ff</b> av1</pre>
+  <p>Each link becomes its own task, so encodes serialise while uploads overlap, and every finished file is durable on its own. Resume after a crash by skipping what's done — the number is how many to skip, not the link number:</p>
+  <pre>/l <b>-b</b> 10: <b>-ff</b> av1     <i># continue from the 11th link</i></pre>
+
+  <h3>Compare encoder settings before committing</h3>
+  <p>Because <code>-ff</code> is repeatable, one command produces every variant from one download:</p>
+  <pre>/l &lt;link&gt; <b>-ff</b> t8 <b>-ff</b> t6 <b>-ff</b> t6q</pre>
+  <pre>movie.mkv              <i>← source, kept</i>
+movie-p8crf32.mkv      <i>← preset 8, CRF 32</i>
+movie-p6crf32.mkv      <i>← preset 6, CRF 32</i>
+movie-p6crf28.mkv      <i>← preset 6, CRF 28</i></pre>
+  <p>Compare the two CRF-32 files first — only the preset differs, so any gap is pure encoder effort. If they match, CRF was your variable all along.</p>
+
+  <h3>Pick files out of a big torrent</h3>
+  <pre>/ql &lt;magnet&gt; <b>-s</b></pre>
+  <p>Opens the web picker. Deselect what you don't want, confirm, and only the rest downloads.</p>
+
+  <details class="more"><summary><span class="dt">More recipes</span><span class="dh">6 more</span></summary><div class="more-body">
+<h3>Season pack into one folder, renamed</h3>
+  <pre>/l <b>-i</b> 12 <b>-m</b> Show S01 <b>-ns</b> 1080p/ | \[grp\]/ <b>-ff</b> av1</pre>
+
+  <h3>Rescue a dead torrent</h3>
+  <pre>/l &lt;magnet&gt; <b>-ad</b> <b>-ff</b> av1</pre>
+  <p>AllDebrid fetches it server-side and you pull from their CDN — peers become irrelevant.</p>
+
+  <h3>Copy a range of Telegram messages</h3>
+  <pre>/clone https://t.me/c/123/120-260 <b>-ud</b> movies <b>-ct</b> med <b>-fwd</b></pre>
+  <p>Needs your stored session (<code>/login</code>). <code>-ud</code> picks one of your Clone Settings destinations by name.</p>
+
+  <h3>Send each leech to a different channel</h3>
+  <pre>/l &lt;link&gt; <b>-ud</b> movies
+/l &lt;link&gt; <b>-ud</b> series</pre>
+  <p>Define the names once in <code>/usettings</code> → Leech Settings → Leech Dump Chats, or bot-wide in <code>LEECH_DUMP_CHATS</code>.</p>
+
+  <h3>Drop junk from every download</h3>
+  <p><code>/bsettings</code> → <code>EXCLUDED_EXTENSIONS</code>:</p>
+  <pre>exe msi dll scr bat cmd apk jpg jpeg png gif bmp webp tif svg ico nfo txt url lnk htm html</pre>
+  <div class="note warn"><b class="lab">Keep entries long</b>
+    <p>Matching is a suffix test against the <em>whole filename</em>, not a real extension check. <code>ts</code> would also delete <code>.mts</code> and <code>.m2ts</code> videos. Every entry above is safe; short ones like <code>ts</code>, <code>rs</code>, <code>db</code>, <code>so</code> are not.</p>
+  </div>
+</div></details>
+</div></section>
+
+<section id="gotchas"><div class="wrap">
+  <p class="chap"><b>12</b>Gotchas</p>
+  <h2>Things that cost an afternoon</h2>
+
+  <div class="cards">
+    <div class="card"><div class="card-h"><em>A config change did nothing</em></div>
+      <p>Settings resolve <b>task flag → user setting → bot config</b>. A value in <code>/usettings</code> overrides <code>config.py</code> permanently and survives restarts. Check there first and hit <b>Reset</b>.</p></div>
+
+    <div class="card"><div class="card-h"><em>Split size snaps back to 2 GB</em></div>
+      <p>Premium wasn't detected when you entered the value, and the clamped result was saved. Confirm <code>PREMIUM_USER: true</code>, then re-enter it. Walk the checklist in <a href="#leech">ch. 10</a>.</p></div>
+
+    <div class="card"><div class="card-h"><em>Files land in the wrong chat</em></div>
+      <p>Only <code>LEECH_LOG_CHAT</code> (or <code>-ud</code>) is a primary destination. Your own dump chats and <code>-up</code> just receive copies; with no primary set, files go to the chat you typed in.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>/cancel GID</code> does nothing</em></div>
+      <p>Cancel and select are wired to the <code>/c_&lt;gid&gt;</code> and <code>/sel_&lt;gid&gt;</code> links that appear on each status message. Tap those.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>jd</code>, <code>nzb</code> or Seedr commands refuse to run</em></div>
+      <p><code>DISABLE_JD</code>, <code>DISABLE_NZB</code> and <code>DISABLE_SEEDR</code> default to True. Turn them off in <code>/bsettings</code>.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>/mediainfo</code>, <code>/imdb</code> and friends don't respond</em></div>
+      <p>They're plugins now. Enable them from <code>/plugins</code>.</p></div>
+
+    <details class="more inline"><summary><span class="dt">10 more fixes</span></summary><div class="more-body">
+    <div class="card"><div class="card-h"><em><code>ValueError: '-i' is not in list</code></em></div>
+      <p><code>-del</code> was written as its own list item. Move it inside the command string it belongs to.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>The maximum allowed frame rate is 240 fps</code></em></div>
+      <p><code>-map 0</code> sent a cover-art stream to the video encoder. Use <code>-map 0:v:0</code> plus optional <code>0:a? 0:s? 0:t?</code>, or drop <code>-map</code> entirely.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>CHANNEL_INVALID</code> when forwarding</em></div>
+      <p>The client doing the copy can't resolve that chat. Add both the bot and the premium account to it, and use the full <code>-100…</code> id.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>part002</code> posted before <code>part001</code></em></div>
+      <p>Concurrent uploads with <code>USE_HYPER</code> on. Set it to <code>False</code> unless <code>HELPER_TOKENS</code> is populated.</p></div>
+
+    <div class="card"><div class="card-h"><em>The log names the same file twice</em></div>
+      <p>A cosmetic race — the uploader stores the current filename on a shared field, so overlapping uploads report the newest name. Both files did upload.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>b:</code> / <code>u:</code> / <code>h:</code> on <code>-up</code> changes nothing</em></div>
+      <p>In the current code the prefix is parsed and then overwritten by <code>TRANSMISSION_MODE</code> and the <code>-bt</code>/<code>-ut</code>/<code>-hl</code> flags. Use those instead.</p></div>
+
+    <div class="card"><div class="card-h"><em>Bulk says "Bulk Empty!"</em></div>
+      <p><code>-b</code> reads from a <b>replied-to</b> message or <code>.txt</code> document. Sent on its own it has nothing to read.</p></div>
+
+    <div class="card"><div class="card-h"><em><code>-b 1:2</code> gave one link, not two</em></div>
+      <p>It's a zero-indexed Python slice. First two is <code>:2</code>; <code>1:2</code> is the second link alone.</p></div>
+
+    <div class="card"><div class="card-h"><em>A crash lost hours of encoding</em></div>
+      <p>Converted files are only uploaded after the whole task's encoding finishes, and the downloads directory is wiped on restart. Use one task per file (bulk mode) and enable <code>INC_TASK_RESUME</code>.</p></div>
+
+    <div class="card"><div class="card-h"><em>Progress stuck at a few percent</em></div>
+      <p>Expected on a <code>-t</code>-limited sample — percentage is measured against the full source duration. Nothing is wrong.</p></div>
+    </div></details>
+  </div>
+
+  <footer>
+    <p>Written against WZML-X v3.1.11 (branch <code>wzv3</code>). Behaviour described here reflects that revision — flags and defaults do move between releases, so re-check <code>/help</code> in the bot after an update.</p>
+  </footer>
+</div></section>
+
+
+<div class="wrap" data-end>
+  <p class="big" style="font-family:var(--f-display);font-size:clamp(40px,7vw,88px);line-height:.95;letter-spacing:-.03em;margin:90px 0 0;max-width:14ch">Now go move <em style="color:var(--accent)">something</em>.</p>
+</div>
+</main>
+</div>
+
+<dialog class="pal" id="pal" aria-label="Search">
+  <div class="pal-in">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="color:var(--ink-3)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="pal-q" type="search" placeholder="Search flags, commands, settings…" autocomplete="off" aria-label="Search">
+  </div>
+  <ul class="pal-list" id="pal-list" role="listbox"></ul>
+  <div class="pal-foot"><span>↑ ↓ to move</span><span>Enter to jump</span><span>Esc to close</span></div>
+</dialog>
+
+<script src="../shared/data/usettings.js" defer></script>
+<script src="../shared/data/bsettings.js" defer></script>
+<script src="../shared/tgsim.js" defer></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
