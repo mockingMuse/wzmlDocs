@@ -242,11 +242,11 @@
     var passed = function(k){ var i = G.findIndex(function(x){ return x.k === k; }); return t >= i + .05; };
     var ffOn = active(G[4]), nsOn = active(G[6]);
     var sz = 3.62; if(ffOn && t >= 4) sz = lerp(3.62, 1.41, ease(clamp((t - 4) / .9, 0, 1)));
-    var base = "Dune.Part.Two.2024", ext = ".mkv";
+    var base = "Sample.Movie.2024", ext = ".mkv";
     if(active(G[10]) && passed("z")) ext = ".zip";
     var cutGone = nsOn && passed("ns");
     fcName.innerHTML = base + '<span class="cut' + (cutGone ? " gone" : "") + '">.2160p</span>' + ext;
-    var rows = [["Dune.Part.Two.2024.2160p.mkv", sz.toFixed(2) + " GB", 0], ["Dune.nfo", "4 KB", passed("ex")], ["RARBG.txt", "1 KB", passed("ex")]];
+    var rows = [["Sample.Movie.2024.2160p.mkv", sz.toFixed(2) + " GB", 0], ["Sample.Movie.nfo", "4 KB", passed("ex")], ["release-info.txt", "1 KB", passed("ex")]];
     if(active(G[7]) && passed("ss")) rows.push(["screenshots ×4", ".jpg", 0]);
     if(active(G[9]) && passed("sv")) rows.push(["sample.mkv", "0.03 GB", 0]);
     fcFiles.innerHTML = rows.map(function(r, i){ var dead = r[2] && t >= 1.6; return '<li class="' + (dead ? "dead" : r[2] ? "hot" : "") + '"><span>' + (i ? r[0] : r[0].replace(".2160p", cutGone ? "" : ".2160p")) + '</span><span>' + r[1] + '</span></li>'; }).join("");
@@ -272,7 +272,7 @@
     lens[d.k] = routeEls[d.k].getTotalLength ? routeEls[d.k].getTotalLength() : 400;
   });
   var src = el("g", {"class": "src node on"}); el("rect", {x: 8, y: 224, width: 124, height: 72, rx: 16}, src);
-  var srcT = el("text", {x: 70, y: 254, "text-anchor": "middle"}, src); srcT.textContent = "Dune.mkv";
+  var srcT = el("text", {x: 70, y: 254, "text-anchor": "middle"}, src); srcT.textContent = "Movie.mkv";
   var srcS = el("text", {x: 70, y: 276, "text-anchor": "middle", "class": "sub"}, src);
   DEST.forEach(function(d, i){
     var y = 22 + i * 98, g = el("g", {"class": "node"}); nodeEls[d.k] = g;

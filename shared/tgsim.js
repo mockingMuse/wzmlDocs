@@ -393,7 +393,7 @@
       return "[" + s + "□".repeat(Math.max(0, 12 - full)) + "]";
     };
     function status(pct, phase, speed, eta, proc){
-      return '<b>1.</b> <b><i>Dune.Part.Two.2024.2160p.mkv</i></b><br><br><b>Task By You</b> ( #ID1042 )<br>' +
+      return '<b>1.</b> <b><i>Sample.Movie.2024.2160p.mkv</i></b><br><br><b>Task By You</b> ( #ID1042 )<br>' +
         '┟ ' + BAR(pct) + ' <i>' + pct.toFixed(1) + '%</i><br>' +
         '┠ <b>Processed</b> → <i>' + proc + ' of 3.62GB</i><br>' +
         '┠ <b>Status</b> → <b>' + phase + '</b><br>' +
@@ -404,7 +404,7 @@
         '┠ <b>Out Mode</b> → <i>#Leech</i><br>' +
         '<b>┖ Stop</b> → <i>/c_a41f9c2e</i>';
     }
-    var cmd = "/ql magnet:?xt=urn:btih:9f2e… -ff av1 -n Dune";
+    var cmd = "/ql magnet:?xt=urn:btih:9f2e… -ff av1 -n Movie";
     async function run(){
       var tok = ++loopTok;
       while(alive && tok === loopTok){
@@ -424,7 +424,7 @@
         for(k = 0; k < enc.length; k++){ var e = enc[k]; put(status(e[0], e[1], e[2], e[3], e[4])); scrollDown(scroll); await wait(2100); if(!alive || tok !== loopTok) return; }
         var up = [[34, "Upload", "31.2MB/s", "46s of 1m 10s", "0.78GB"], [81, "Upload", "33.5MB/s", "13s of 1m 8s", "1.84GB"]];
         for(k = 0; k < up.length; k++){ var u = up[k]; put(status(u[0], u[1], u[2], u[3], u[4])); await wait(2000); if(!alive || tok !== loopTok) return; }
-        put('<b>Dune.mkv</b><br>┌ <b>Size</b> → 1.41GB<br>├ <b>Type</b> → Video<br>└ <b>Leeched by</b> → You<br><br><i>Cc: Dune.mkv</i>');
+        put('<b>Movie.mkv</b><br>┌ <b>Size</b> → 1.41GB<br>├ <b>Type</b> → Video<br>└ <b>Leeched by</b> → You<br><br><i>Cc: Movie.mkv</i>');
         fillKb(kb, [[{t: "Cloud Link", to: ""}, {t: "Open in Telegram", to: ""}]]);
         scrollDown(scroll);
         await wait(6500);

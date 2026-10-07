@@ -4893,7 +4893,7 @@ window.WZ_SCREENS.usettings = {
   },
   "main": {
    "kind": "menu",
-   "text": "⌬ <b>User Settings :</b>\n│\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┠ <b>UserID</b> → #ID123456789\n┠ <b>Username</b> → @himanshu_dev\n┠ <b>Telegram DC</b> → 4\n┖ <b>Telegram Lang</b> → English",
+   "text": "⌬ <b>User Settings :</b>\n│\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┠ <b>UserID</b> → #ID123456789\n┠ <b>Username</b> → @alex_dev\n┠ <b>Telegram DC</b> → 4\n┖ <b>Telegram Lang</b> → English",
    "rows": [
     [
      {
@@ -4956,7 +4956,7 @@ window.WZ_SCREENS.usettings = {
   },
   "main_r": {
    "kind": "menu",
-   "text": "⌬ <b>User Settings :</b>\n│\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┠ <b>UserID</b> → #ID123456789\n┠ <b>Username</b> → @himanshu_dev\n┠ <b>Telegram DC</b> → 4\n┖ <b>Telegram Lang</b> → English",
+   "text": "⌬ <b>User Settings :</b>\n│\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┠ <b>UserID</b> → #ID123456789\n┠ <b>Username</b> → @alex_dev\n┠ <b>Telegram DC</b> → 4\n┖ <b>Telegram Lang</b> → English",
    "rows": [
     [
      {
@@ -5023,7 +5023,7 @@ window.WZ_SCREENS.usettings = {
   },
   "general_gd_o": {
    "kind": "menu",
-   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Default Upload Package</b> → <b>GDRIVE API</b>\n┖ <b>Default Usage Mode</b> → <b>OWNER's</b> token/config\n",
+   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Default Upload Package</b> → <b>GDRIVE API</b>\n┖ <b>Default Usage Mode</b> → <b>OWNER's</b> token/config\n",
    "rows": [
     [
      {
@@ -5050,7 +5050,7 @@ window.WZ_SCREENS.usettings = {
   },
   "general_gd_u": {
    "kind": "menu",
-   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Default Upload Package</b> → <b>GDRIVE API</b>\n┖ <b>Default Usage Mode</b> → <b>USER's</b> token/config\n",
+   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Default Upload Package</b> → <b>GDRIVE API</b>\n┖ <b>Default Usage Mode</b> → <b>USER's</b> token/config\n",
    "rows": [
     [
      {
@@ -5077,7 +5077,7 @@ window.WZ_SCREENS.usettings = {
   },
   "general_rc_o": {
    "kind": "menu",
-   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Default Upload Package</b> → <b>RCLONE</b>\n┖ <b>Default Usage Mode</b> → <b>OWNER's</b> token/config\n",
+   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Default Upload Package</b> → <b>RCLONE</b>\n┖ <b>Default Usage Mode</b> → <b>OWNER's</b> token/config\n",
    "rows": [
     [
      {
@@ -5104,7 +5104,7 @@ window.WZ_SCREENS.usettings = {
   },
   "general_rc_u": {
    "kind": "menu",
-   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Default Upload Package</b> → <b>RCLONE</b>\n┖ <b>Default Usage Mode</b> → <b>USER's</b> token/config\n",
+   "text": "⌬ <b>General Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Default Upload Package</b> → <b>RCLONE</b>\n┖ <b>Default Usage Mode</b> → <b>USER's</b> token/config\n",
    "rows": [
     [
      {
@@ -5131,7 +5131,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b000": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5194,7 +5194,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b001": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5257,7 +5257,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b010": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5320,7 +5320,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b011": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5383,7 +5383,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b100": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5446,7 +5446,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b101": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5509,7 +5509,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b110": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5572,7 +5572,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_b111": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.95GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>Not Exists</code>\n┠ Leech Suffix → <code>Not Exists</code>\n┠ Leech Caption → <code>Not Exists</code>\n┖ Leech Dump Chats → <code>None</code>\n",
    "rows": [
     [
      {
@@ -5635,7 +5635,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f000": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -5698,7 +5698,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f001": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -5761,7 +5761,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f010": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -5824,7 +5824,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f011": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>MEDIA</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -5887,7 +5887,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f100": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -5950,7 +5950,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f101": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Disabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -6013,7 +6013,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f110": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Disabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -6076,7 +6076,7 @@ window.WZ_SCREENS.usettings = {
   },
   "leech_f111": {
    "kind": "menu",
-   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
+   "text": "⌬ <b>Leech Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ Leech Type → <b>DOCUMENT</b>\n┠ Leech Split Size → <b>1.00GB</b>\n┠ Equal Splits → <b>Enabled</b>\n┠ Media Group → <b>Enabled</b>\n┠ Leech Prefix → <code>@MyChannel</code>\n┠ Leech Suffix → <code>[WZ]</code>\n┠ Leech Caption → <code>&lt;b&gt;{filename}&lt;/b&gt;\nSize: {size}</code>\n┖ Leech Dump Chats → <code>Movies, Series</code>\n",
    "rows": [
     [
      {
@@ -6139,7 +6139,7 @@ window.WZ_SCREENS.usettings = {
   },
   "thumb_b0": {
    "kind": "menu",
-   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Not Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Disabled</b>\n┖ <b>Layout</b> → <b>None</b>\n",
+   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Not Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Disabled</b>\n┖ <b>Layout</b> → <b>None</b>\n",
    "rows": [
     [
      {
@@ -6172,7 +6172,7 @@ window.WZ_SCREENS.usettings = {
   },
   "thumb_b1": {
    "kind": "menu",
-   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Not Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Enabled</b>\n┖ <b>Layout</b> → <b>None</b>\n",
+   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Not Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Enabled</b>\n┖ <b>Layout</b> → <b>None</b>\n",
    "rows": [
     [
      {
@@ -6205,7 +6205,7 @@ window.WZ_SCREENS.usettings = {
   },
   "thumb_f0": {
    "kind": "menu",
-   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Disabled</b>\n┖ <b>Layout</b> → <b>3x3</b>\n",
+   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Disabled</b>\n┖ <b>Layout</b> → <b>3x3</b>\n",
    "rows": [
     [
      {
@@ -6242,7 +6242,7 @@ window.WZ_SCREENS.usettings = {
   },
   "thumb_f1": {
    "kind": "menu",
-   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Enabled</b>\n┖ <b>Layout</b> → <b>3x3</b>\n",
+   "text": "⌬ <b>Thumbnail Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Custom Thumbnail</b> → <b>Exists</b>\n┠ <b>Auto Thumbnail</b> → <b>Enabled</b>\n┖ <b>Layout</b> → <b>3x3</b>\n",
    "rows": [
     [
      {
@@ -6279,7 +6279,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00001": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Vikingfile",
    "rows": [
     [
      {
@@ -6371,7 +6371,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00010": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Devuploads",
    "rows": [
     [
      {
@@ -6463,7 +6463,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00011": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -6555,7 +6555,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00100": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain",
    "rows": [
     [
      {
@@ -6647,7 +6647,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00101": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Vikingfile",
    "rows": [
     [
      {
@@ -6739,7 +6739,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00110": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Devuploads",
    "rows": [
     [
      {
@@ -6831,7 +6831,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_00111": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Pixeldrain, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -6923,7 +6923,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01000": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier",
    "rows": [
     [
      {
@@ -7015,7 +7015,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01001": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Vikingfile",
    "rows": [
     [
      {
@@ -7107,7 +7107,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01010": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Devuploads",
    "rows": [
     [
      {
@@ -7199,7 +7199,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01011": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -7291,7 +7291,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01100": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain",
    "rows": [
     [
      {
@@ -7383,7 +7383,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01101": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Vikingfile",
    "rows": [
     [
      {
@@ -7475,7 +7475,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01110": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Devuploads",
    "rows": [
     [
      {
@@ -7567,7 +7567,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_01111": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Buzzheavier, Pixeldrain, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -7659,7 +7659,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10000": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile",
    "rows": [
     [
      {
@@ -7751,7 +7751,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10001": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Vikingfile",
    "rows": [
     [
      {
@@ -7843,7 +7843,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10010": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Devuploads",
    "rows": [
     [
      {
@@ -7935,7 +7935,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10011": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -8027,7 +8027,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10100": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain",
    "rows": [
     [
      {
@@ -8119,7 +8119,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10101": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Vikingfile",
    "rows": [
     [
      {
@@ -8211,7 +8211,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10110": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Devuploads",
    "rows": [
     [
      {
@@ -8303,7 +8303,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_10111": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Pixeldrain, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -8395,7 +8395,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11000": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier",
    "rows": [
     [
      {
@@ -8487,7 +8487,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11001": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Vikingfile",
    "rows": [
     [
      {
@@ -8579,7 +8579,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11010": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Devuploads",
    "rows": [
     [
      {
@@ -8671,7 +8671,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11011": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -8763,7 +8763,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11100": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain",
    "rows": [
     [
      {
@@ -8855,7 +8855,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11101": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Vikingfile",
    "rows": [
     [
      {
@@ -8947,7 +8947,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11110": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Devuploads",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Devuploads",
    "rows": [
     [
      {
@@ -9039,7 +9039,7 @@ window.WZ_SCREENS.usettings = {
   },
   "uphoster_11111": {
    "kind": "menu",
-   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Devuploads, Vikingfile",
+   "text": "⌬ <b>Uphoster Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Current Destination</b> → Gofile, Buzzheavier, Pixeldrain, Devuploads, Vikingfile",
    "rows": [
     [
      {
@@ -9131,7 +9131,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gofile_b0": {
    "kind": "menu",
-   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gofile Token</b> → <code>None</code>\n┠ <b>Gofile Folder ID</b> → <code>None (Uploads to Root)</code>\n┖ <b>Auto-Create Folder</b> → <code>Disabled</code>",
+   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gofile Token</b> → <code>None</code>\n┠ <b>Gofile Folder ID</b> → <code>None (Uploads to Root)</code>\n┖ <b>Auto-Create Folder</b> → <code>Disabled</code>",
    "rows": [
     [
      {
@@ -9166,7 +9166,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gofile_b1": {
    "kind": "menu",
-   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gofile Token</b> → <code>None</code>\n┠ <b>Gofile Folder ID</b> → <code>None (Uploads to Root)</code>\n┖ <b>Auto-Create Folder</b> → <code>Enabled</code>",
+   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gofile Token</b> → <code>None</code>\n┠ <b>Gofile Folder ID</b> → <code>None (Uploads to Root)</code>\n┖ <b>Auto-Create Folder</b> → <code>Enabled</code>",
    "rows": [
     [
      {
@@ -9201,7 +9201,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gofile_f0": {
    "kind": "menu",
-   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gofile Token</b> → <code>AbCdEf123456GofileToken</code>\n┠ <b>Gofile Folder ID</b> → <code>xYz9Ab</code>\n┖ <b>Auto-Create Folder</b> → <code>Disabled</code>",
+   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gofile Token</b> → <code>AbCdEf123456GofileToken</code>\n┠ <b>Gofile Folder ID</b> → <code>xYz9Ab</code>\n┖ <b>Auto-Create Folder</b> → <code>Disabled</code>",
    "rows": [
     [
      {
@@ -9236,7 +9236,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gofile_f1": {
    "kind": "menu",
-   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gofile Token</b> → <code>AbCdEf123456GofileToken</code>\n┠ <b>Gofile Folder ID</b> → <code>xYz9Ab</code>\n┖ <b>Auto-Create Folder</b> → <code>Enabled</code>",
+   "text": "⌬ <b>Gofile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gofile Token</b> → <code>AbCdEf123456GofileToken</code>\n┠ <b>Gofile Folder ID</b> → <code>xYz9Ab</code>\n┖ <b>Auto-Create Folder</b> → <code>Enabled</code>",
    "rows": [
     [
      {
@@ -9271,7 +9271,7 @@ window.WZ_SCREENS.usettings = {
   },
   "buzzheavier_b": {
    "kind": "menu",
-   "text": "⌬ <b>BuzzHeavier Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>BuzzHeavier Token</b> → <code>None</code>\n┖ <b>BuzzHeavier Folder ID</b> → <code>None</code>",
+   "text": "⌬ <b>BuzzHeavier Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>BuzzHeavier Token</b> → <code>None</code>\n┖ <b>BuzzHeavier Folder ID</b> → <code>None</code>",
    "rows": [
     [
      {
@@ -9300,7 +9300,7 @@ window.WZ_SCREENS.usettings = {
   },
   "buzzheavier_f": {
    "kind": "menu",
-   "text": "⌬ <b>BuzzHeavier Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>BuzzHeavier Token</b> → <code>bz_acc_8f3k2j</code>\n┖ <b>BuzzHeavier Folder ID</b> → <code>f9d3kj</code>",
+   "text": "⌬ <b>BuzzHeavier Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>BuzzHeavier Token</b> → <code>bz_acc_8f3k2j</code>\n┖ <b>BuzzHeavier Folder ID</b> → <code>f9d3kj</code>",
    "rows": [
     [
      {
@@ -9329,7 +9329,7 @@ window.WZ_SCREENS.usettings = {
   },
   "pixeldrain_b": {
    "kind": "menu",
-   "text": "⌬ <b>PixelDrain Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>PixelDrain Key</b> → <code>None</code>",
+   "text": "⌬ <b>PixelDrain Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>PixelDrain Key</b> → <code>None</code>",
    "rows": [
     [
      {
@@ -9352,7 +9352,7 @@ window.WZ_SCREENS.usettings = {
   },
   "pixeldrain_f": {
    "kind": "menu",
-   "text": "⌬ <b>PixelDrain Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>PixelDrain Key</b> → <code>1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</code>",
+   "text": "⌬ <b>PixelDrain Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>PixelDrain Key</b> → <code>1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</code>",
    "rows": [
     [
      {
@@ -9375,7 +9375,7 @@ window.WZ_SCREENS.usettings = {
   },
   "devuploads_b": {
    "kind": "menu",
-   "text": "⌬ <b>DevUploads Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>DevUploads Key</b> → <code>None</code>\n┖ <b>DevUploads Folder ID</b> → <code>None (Root)</code>",
+   "text": "⌬ <b>DevUploads Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>DevUploads Key</b> → <code>None</code>\n┖ <b>DevUploads Folder ID</b> → <code>None (Root)</code>",
    "rows": [
     [
      {
@@ -9404,7 +9404,7 @@ window.WZ_SCREENS.usettings = {
   },
   "devuploads_f": {
    "kind": "menu",
-   "text": "⌬ <b>DevUploads Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>DevUploads Key</b> → <code>dev_9f8e7d6c5b</code>\n┖ <b>DevUploads Folder ID</b> → <code>12345</code>",
+   "text": "⌬ <b>DevUploads Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>DevUploads Key</b> → <code>dev_9f8e7d6c5b</code>\n┖ <b>DevUploads Folder ID</b> → <code>12345</code>",
    "rows": [
     [
      {
@@ -9433,7 +9433,7 @@ window.WZ_SCREENS.usettings = {
   },
   "vikingfile_b": {
    "kind": "menu",
-   "text": "⌬ <b>VikingFile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>VikingFile Hash</b> → <code>None</code>\n┖ <b>VikingFile Folder</b> → <code>None (Root)</code>",
+   "text": "⌬ <b>VikingFile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>VikingFile Hash</b> → <code>None</code>\n┖ <b>VikingFile Folder</b> → <code>None (Root)</code>",
    "rows": [
     [
      {
@@ -9462,7 +9462,7 @@ window.WZ_SCREENS.usettings = {
   },
   "vikingfile_f": {
    "kind": "menu",
-   "text": "⌬ <b>VikingFile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>VikingFile Hash</b> → <code>vk_7h2g1f0e9d</code>\n┖ <b>VikingFile Folder</b> → <code>WZ/Uploads</code>",
+   "text": "⌬ <b>VikingFile Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>VikingFile Hash</b> → <code>vk_7h2g1f0e9d</code>\n┖ <b>VikingFile Folder</b> → <code>WZ/Uploads</code>",
    "rows": [
     [
      {
@@ -9491,7 +9491,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mirror_00": {
    "kind": "menu",
-   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Disabled</b>\n",
+   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Disabled</b>\n",
    "rows": [
     [
      {
@@ -9534,7 +9534,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mirror_01": {
    "kind": "menu",
-   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Enabled</b>\n",
+   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Enabled</b>\n",
    "rows": [
     [
      {
@@ -9577,7 +9577,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mirror_10": {
    "kind": "menu",
-   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Disabled</b>\n",
+   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Disabled</b>\n",
    "rows": [
     [
      {
@@ -9620,7 +9620,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mirror_11": {
    "kind": "menu",
-   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Enabled</b>\n",
+   "text": "⌬ <b>Mirror Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┖ <b>Bot Stop Duplicate</b> → <b>Enabled</b>\n",
    "rows": [
     [
      {
@@ -9663,7 +9663,7 @@ window.WZ_SCREENS.usettings = {
   },
   "rclone_b": {
    "kind": "menu",
-   "text": "⌬ <b>RClone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Rclone Config</b> → <b>Not Exists</b>\n┠ <b>Rclone Flags</b> → <code>None</code>\n┖ <b>Rclone Path</b> → <code>None</code>",
+   "text": "⌬ <b>RClone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Rclone Config</b> → <b>Not Exists</b>\n┠ <b>Rclone Flags</b> → <code>None</code>\n┖ <b>Rclone Path</b> → <code>None</code>",
    "rows": [
     [
      {
@@ -9696,7 +9696,7 @@ window.WZ_SCREENS.usettings = {
   },
   "rclone_f": {
    "kind": "menu",
-   "text": "⌬ <b>RClone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Rclone Config</b> → <b>Exists</b>\n┠ <b>Rclone Flags</b> → <code>--buffer-size:8M|--drive-starred-only</code>\n┖ <b>Rclone Path</b> → <code>mrcc:gdrive:Mirror</code>",
+   "text": "⌬ <b>RClone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Rclone Config</b> → <b>Exists</b>\n┠ <b>Rclone Flags</b> → <code>--buffer-size:8M|--drive-starred-only</code>\n┖ <b>Rclone Path</b> → <code>mrcc:gdrive:Mirror</code>",
    "rows": [
     [
      {
@@ -9729,7 +9729,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gdrive_b0": {
    "kind": "menu",
-   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gdrive ID</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Disabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Not Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>None</code>",
+   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gdrive ID</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Disabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Not Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>None</code>",
    "rows": [
     [
      {
@@ -9774,7 +9774,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gdrive_b1": {
    "kind": "menu",
-   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gdrive ID</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Enabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Not Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>None</code>",
+   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gdrive ID</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>None</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Enabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Not Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>None</code>",
    "rows": [
     [
      {
@@ -9817,7 +9817,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gdrive_f0": {
    "kind": "menu",
-   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gdrive ID</b> → <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>https://index.example.workers.dev/0:</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Disabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> | <code>https://index.example.workers.dev/0:</code>\n     <b>Movies</b>: <code>0BxMoviesDriveId</code> | <code>https://index.example.dev/movies</code>\n     <b>TV</b>: <code>1AyTvDriveId</code>",
+   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gdrive ID</b> → <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>https://index.example.workers.dev/0:</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Disabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> | <code>https://index.example.workers.dev/0:</code>\n     <b>Movies</b>: <code>0BxMoviesDriveId</code> | <code>https://index.example.dev/movies</code>\n     <b>TV</b>: <code>1AyTvDriveId</code>",
    "rows": [
     [
      {
@@ -9862,7 +9862,7 @@ window.WZ_SCREENS.usettings = {
   },
   "gdrive_f1": {
    "kind": "menu",
-   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Gdrive ID</b> → <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>https://index.example.workers.dev/0:</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Enabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> | <code>https://index.example.workers.dev/0:</code>\n     <b>Movies</b>: <code>0BxMoviesDriveId</code> | <code>https://index.example.dev/movies</code>\n     <b>TV</b>: <code>1AyTvDriveId</code>",
+   "text": "⌬ <b>GDrive Tools Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Gdrive ID</b> → <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> <i>(Default)</i>\n┠ <b>Index URL</b> → <code>https://index.example.workers.dev/0:</code> <i>(Default)</i>\n┠ <b>Stop Duplicate</b> → <b>Enabled</b>\n┠ <b>GDrive token.pickle</b> → <b>Exists</b>\n┠ <b>Drive Upload SA</b> → <code>Not Set</code>\n┠ <b>Drive Category</b> → <b>Disabled</b>\n┖ <b>Drive Categories:</b> \n     <b>Default</b>: <code>mtp:1a2B3c4D5e6F7g8H9i0J</code> | <code>https://index.example.workers.dev/0:</code>\n     <b>Movies</b>: <code>0BxMoviesDriveId</code> | <code>https://index.example.dev/movies</code>\n     <b>TV</b>: <code>1AyTvDriveId</code>",
    "rows": [
     [
      {
@@ -9905,7 +9905,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mega_b": {
    "kind": "menu",
-   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Mega Email</b> → <code>Not Set</code>\n┠ <b>Mega Password</b> → <code>Not Set</code>\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Mega Email</b> → <code>Not Set</code>\n┠ <b>Mega Password</b> → <code>Not Set</code>\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -9928,7 +9928,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mega_e": {
    "kind": "menu",
-   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Mega Email</b> → <code>me@example.com</code>\n┠ <b>Mega Password</b> → <code>Not Set</code>\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Mega Email</b> → <code>me@example.com</code>\n┠ <b>Mega Password</b> → <code>Not Set</code>\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -9957,7 +9957,7 @@ window.WZ_SCREENS.usettings = {
   },
   "mega_f": {
    "kind": "menu",
-   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Mega Email</b> → <code>me@example.com</code>\n┠ <b>Mega Password</b> → <code>Su*********99</code>\n┖ <b>Account</b> → ✓ Configured\n\n⌬ <b>Mega Account Info</b>\n│\n┠ <b>Email</b> → <code>me@example.com</code>\n┠ <b>Account Type</b> → Free\n┃\n┠ <b>Storage</b> → 3.20GB / 20.00GB (16.0%)\n┠ <b>Transfer</b> → 1.10GB / 5.00GB (22.0%)\n┃\n┠ <b>Files</b> → 42\n┖ <b>Folders</b> → 6",
+   "text": "⌬ <b>Mega Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Mega Email</b> → <code>me@example.com</code>\n┠ <b>Mega Password</b> → <code>Su*********99</code>\n┖ <b>Account</b> → ✓ Configured\n\n⌬ <b>Mega Account Info</b>\n│\n┠ <b>Email</b> → <code>me@example.com</code>\n┠ <b>Account Type</b> → Free\n┃\n┠ <b>Storage</b> → 3.20GB / 20.00GB (16.0%)\n┠ <b>Transfer</b> → 1.10GB / 5.00GB (22.0%)\n┃\n┠ <b>Files</b> → 42\n┖ <b>Folders</b> → 6",
    "rows": [
     [
      {
@@ -9992,7 +9992,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_b0": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>Not Set</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>Not Set</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -10021,7 +10021,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_b1": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>Not Set</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>Not Set</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -10050,7 +10050,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_e0": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -10085,7 +10085,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_e1": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ❌ Not Configured",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Not Set</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ❌ Not Configured",
    "rows": [
     [
      {
@@ -10120,7 +10120,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_f0": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Se********42</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ✓ Configured\n\n<b>Seedr Space</b> → <code>1.20GB / 2.00GB</code>",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Se********42</code>\n┠ <b>Delete Folder</b> → Disabled\n┖ <b>Account</b> → ✓ Configured\n\n<b>Seedr Space</b> → <code>1.20GB / 2.00GB</code>",
    "rows": [
     [
      {
@@ -10165,7 +10165,7 @@ window.WZ_SCREENS.usettings = {
   },
   "seedr_f1": {
    "kind": "menu",
-   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Se********42</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ✓ Configured\n\n<b>Seedr Space</b> → <code>1.20GB / 2.00GB</code>",
+   "text": "⌬ <b>Seedr Tools :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Seedr Email</b> → <code>me@example.com</code>\n┠ <b>Seedr Password</b> → <code>Se********42</code>\n┠ <b>Delete Folder</b> → Enabled\n┖ <b>Account</b> → ✓ Configured\n\n<b>Seedr Space</b> → <code>1.20GB / 2.00GB</code>",
    "rows": [
     [
      {
@@ -10210,7 +10210,7 @@ window.WZ_SCREENS.usettings = {
   },
   "clone_b": {
    "kind": "menu",
-   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>User Session</b> → <b>Not Exists 🔓</b>\n┠ <b>Key State</b> → <b>Locked</b>\n┠ <b>Destinations</b> → <code>None</code>\n┠ <b>Content Type</b> → <b>all</b>\n┠ <b>Excluded Ext</b> → <code>None</code>\n┖ <b>Regex Filters</b> → <code>None</code>",
+   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>User Session</b> → <b>Not Exists 🔓</b>\n┠ <b>Key State</b> → <b>Locked</b>\n┠ <b>Destinations</b> → <code>None</code>\n┠ <b>Content Type</b> → <b>all</b>\n┠ <b>Excluded Ext</b> → <code>None</code>\n┖ <b>Regex Filters</b> → <code>None</code>",
    "rows": [
     [
      {
@@ -10253,7 +10253,7 @@ window.WZ_SCREENS.usettings = {
   },
   "clone_f": {
    "kind": "menu",
-   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>User Session</b> → <b>Exists 🔐</b>\n┠ <b>Key State</b> → <b>Unlocked (11h58m20s left)</b>\n┠ <b>Destinations</b> → <code>Movies</code>\n┠ <b>Content Type</b> → <b>med</b>\n┠ <b>Excluded Ext</b> → <code>mkv, srt, txt</code>\n┖ <b>Regex Filters</b> → <code>mn, xc</code>",
+   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>User Session</b> → <b>Exists 🔐</b>\n┠ <b>Key State</b> → <b>Unlocked (11h58m20s left)</b>\n┠ <b>Destinations</b> → <code>Movies</code>\n┠ <b>Content Type</b> → <b>med</b>\n┠ <b>Excluded Ext</b> → <code>mkv, srt, txt</code>\n┖ <b>Regex Filters</b> → <code>mn, xc</code>",
    "rows": [
     [
      {
@@ -10302,7 +10302,7 @@ window.WZ_SCREENS.usettings = {
   },
   "clone_fl": {
    "kind": "menu",
-   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>User Session</b> → <b>Exists 🔐</b>\n┠ <b>Key State</b> → <b>Locked</b>\n┠ <b>Destinations</b> → <code>Movies</code>\n┠ <b>Content Type</b> → <b>med</b>\n┠ <b>Excluded Ext</b> → <code>mkv, srt, txt</code>\n┖ <b>Regex Filters</b> → <code>mn, xc</code>",
+   "text": "⌬ <b>Clone Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>User Session</b> → <b>Exists 🔐</b>\n┠ <b>Key State</b> → <b>Locked</b>\n┠ <b>Destinations</b> → <code>Movies</code>\n┠ <b>Content Type</b> → <b>med</b>\n┠ <b>Excluded Ext</b> → <code>mkv, srt, txt</code>\n┖ <b>Regex Filters</b> → <code>mn, xc</code>",
    "rows": [
     [
      {
@@ -10345,7 +10345,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ffset_b": {
    "kind": "menu",
-   "text": "⌬ <b>FF Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>FFmpeg CLI Commands</b> → <b>Not Exists</b>\n┃\n┠ <b>Default Metadata</b> → <b>Not Set</b>\n┠ <b>Audio Metadata</b> → <b>Not Set</b>\n┠ <b>Video Metadata</b> → <b>Not Set</b>\n┖ <b>Subtitle Metadata</b> → <b>Not Set</b>",
+   "text": "⌬ <b>FF Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>FFmpeg CLI Commands</b> → <b>Not Exists</b>\n┃\n┠ <b>Default Metadata</b> → <b>Not Set</b>\n┠ <b>Audio Metadata</b> → <b>Not Set</b>\n┠ <b>Video Metadata</b> → <b>Not Set</b>\n┖ <b>Subtitle Metadata</b> → <b>Not Set</b>",
    "rows": [
     [
      {
@@ -10388,7 +10388,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ffset_f": {
    "kind": "menu",
-   "text": "⌬ <b>FF Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>FFmpeg CLI Commands</b> → \n1. <b>convert</b>: <code>-i mltb.m4a -c:a libmp3lame -q:a 2 mltb.mp3</code>\n2. <b>subtitle</b>: <code>-i mltb.mkv -c copy -c:s srt mltb.mkv -del</code>\n┃\n┠ <b>Default Metadata</b> → <code>title={basename}, artist=@MyChannel</code>\n┠ <b>Audio Metadata</b> → <code>language={audiolang}, title=Audio - {audiolang}</code>\n┠ <b>Video Metadata</b> → <code>title={basename}, comment=HD Video</code>\n┖ <b>Subtitle Metadata</b> → <code>language={sublang}, title=Subtitles - {sublang}</code>",
+   "text": "⌬ <b>FF Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>FFmpeg CLI Commands</b> → \n1. <b>convert</b>: <code>-i mltb.m4a -c:a libmp3lame -q:a 2 mltb.mp3</code>\n2. <b>subtitle</b>: <code>-i mltb.mkv -c copy -c:s srt mltb.mkv -del</code>\n┃\n┠ <b>Default Metadata</b> → <code>title={basename}, artist=@MyChannel</code>\n┠ <b>Audio Metadata</b> → <code>language={audiolang}, title=Audio - {audiolang}</code>\n┠ <b>Video Metadata</b> → <code>title={basename}, comment=HD Video</code>\n┖ <b>Subtitle Metadata</b> → <code>language={sublang}, title=Subtitles - {sublang}</code>",
    "rows": [
     [
      {
@@ -10431,7 +10431,7 @@ window.WZ_SCREENS.usettings = {
   },
   "advanced_b": {
    "kind": "menu",
-   "text": "⌬ <b>Advanced Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Auto Name Swaps</b> → <b>Not Exists</b>\n┠ <b>Excluded Extensions</b> → <code>aria2, !qB</code>\n┖ <b>Upload Paths</b> → <b>None</b>",
+   "text": "⌬ <b>Advanced Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Auto Name Swaps</b> → <b>Not Exists</b>\n┠ <b>Excluded Extensions</b> → <code>aria2, !qB</code>\n┖ <b>Upload Paths</b> → <b>None</b>",
    "rows": [
     [
      {
@@ -10464,7 +10464,7 @@ window.WZ_SCREENS.usettings = {
   },
   "advanced_f": {
    "kind": "menu",
-   "text": "⌬ <b>Advanced Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>Auto Name Swaps</b> → <code>WEB-DL:WEBDL:0:IGNORECASE|\\.:_</code>\n┠ <b>Excluded Extensions</b> → <code>aria2, !qB, txt, nfo, jpg</code>\n┖ <b>Upload Paths</b> → <b>{'movies': 'gdrive:Movies', 'chat': '-1001234567890'}</b>",
+   "text": "⌬ <b>Advanced Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>Auto Name Swaps</b> → <code>WEB-DL:WEBDL:0:IGNORECASE|\\.:_</code>\n┠ <b>Excluded Extensions</b> → <code>aria2, !qB, txt, nfo, jpg</code>\n┖ <b>Upload Paths</b> → <b>{'movies': 'gdrive:Movies', 'chat': '-1001234567890'}</b>",
    "rows": [
     [
      {
@@ -10497,7 +10497,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ytdlp_b0": {
    "kind": "menu",
-   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>None</code>\n┠ <b>Cookie File</b> → <b>Not Exists</b>\n┠ <b>Cookie In Use</b> → <b>Yours</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded with WZML-X bot</code>\n┠ <b>Upload Tags</b> → <code>telegram,bot,youtube</code>\n┠ <b>Upload Category</b> → <code>22</code>\n┖ <b>Upload Privacy</b> → <code>unlisted</code>",
+   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>None</code>\n┠ <b>Cookie File</b> → <b>Not Exists</b>\n┠ <b>Cookie In Use</b> → <b>Yours</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded with WZML-X bot</code>\n┠ <b>Upload Tags</b> → <code>telegram,bot,youtube</code>\n┠ <b>Upload Category</b> → <code>22</code>\n┖ <b>Upload Privacy</b> → <code>unlisted</code>",
    "rows": [
     [
      {
@@ -10550,7 +10550,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ytdlp_b1": {
    "kind": "menu",
-   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>None</code>\n┠ <b>Cookie File</b> → <b>Not Exists</b>\n┠ <b>Cookie In Use</b> → <b>Owner's</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded with WZML-X bot</code>\n┠ <b>Upload Tags</b> → <code>telegram,bot,youtube</code>\n┠ <b>Upload Category</b> → <code>22</code>\n┖ <b>Upload Privacy</b> → <code>unlisted</code>",
+   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>None</code>\n┠ <b>Cookie File</b> → <b>Not Exists</b>\n┠ <b>Cookie In Use</b> → <b>Owner's</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded with WZML-X bot</code>\n┠ <b>Upload Tags</b> → <code>telegram,bot,youtube</code>\n┠ <b>Upload Category</b> → <code>22</code>\n┖ <b>Upload Privacy</b> → <code>unlisted</code>",
    "rows": [
     [
      {
@@ -10603,7 +10603,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ytdlp_f0": {
    "kind": "menu",
-   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>{'format': 'bv*+ba/b', 'writesubtitles': True}</code>\n┠ <b>Cookie File</b> → <b>Exists</b>\n┠ <b>Cookie In Use</b> → <b>Yours</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded via my bot</code>\n┠ <b>Upload Tags</b> → <code>movies,hd</code>\n┠ <b>Upload Category</b> → <code>24</code>\n┖ <b>Upload Privacy</b> → <code>private</code>",
+   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>{'format': 'bv*+ba/b', 'writesubtitles': True}</code>\n┠ <b>Cookie File</b> → <b>Exists</b>\n┠ <b>Cookie In Use</b> → <b>Yours</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded via my bot</code>\n┠ <b>Upload Tags</b> → <code>movies,hd</code>\n┠ <b>Upload Category</b> → <code>24</code>\n┖ <b>Upload Privacy</b> → <code>private</code>",
    "rows": [
     [
      {
@@ -10656,7 +10656,7 @@ window.WZ_SCREENS.usettings = {
   },
   "ytdlp_f1": {
    "kind": "menu",
-   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Himanshu</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>{'format': 'bv*+ba/b', 'writesubtitles': True}</code>\n┠ <b>Cookie File</b> → <b>Exists</b>\n┠ <b>Cookie In Use</b> → <b>Owner's</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded via my bot</code>\n┠ <b>Upload Tags</b> → <code>movies,hd</code>\n┠ <b>Upload Category</b> → <code>24</code>\n┖ <b>Upload Privacy</b> → <code>private</code>",
+   "text": "⌬ <b>YT-DLP Settings :</b>\n┟ <b>Name</b> → <a href=\"tg://user?id=123456789\">Alex</a>\n┃\n┠ <b>YT-DLP Options</b> → <code>{'format': 'bv*+ba/b', 'writesubtitles': True}</code>\n┠ <b>Cookie File</b> → <b>Exists</b>\n┠ <b>Cookie In Use</b> → <b>Owner's</b>\n┃\n┠ <b>Upload Description</b> → <code>Uploaded via my bot</code>\n┠ <b>Upload Tags</b> → <code>movies,hd</code>\n┠ <b>Upload Category</b> → <code>24</code>\n┖ <b>Upload Privacy</b> → <code>private</code>",
    "rows": [
     [
      {
